@@ -1,0 +1,15 @@
+[submodule "js_train"]
+	path = js_train
+	url = https://github.com/wisberry2022/js_train.git
+[submodule "learn"]
+	path = learn
+	url = https://github.com/wisberry2022/learn.git
+[submodule "make_web"]
+	path = make_web
+	url = https://github.com/wisberry2022/make_web.git
+[submodule "responsive_web"]
+	path = responsive_web
+	url = https://github.com/wisberry2022/responsive_web.git
+[submodule "web_practice"]
+	path = web_practice
+	url = https://github.com/wisberry2022/web_practice.git
