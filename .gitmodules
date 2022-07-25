@@ -13,3 +13,6 @@
 [submodule "web_practice"]
 	path = web_practice
 	url = https://github.com/wisberry2022/web_practice.git
+[submodule "react_inseo"]
+	path = react_inseo
+	url = https://github.com/wisberry2022/react_inseo.git
