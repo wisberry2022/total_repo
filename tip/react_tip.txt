@@ -1,0 +1,41 @@
+React 기초
+
+npm install을 이용하면 다른 PC에서도 동일한 환경으로 리액트를 사용할 수 있다
+
+package.json
+	-> 사용자가 다운받은 라이브러리나 프로그램의 내역을 자동으로 기록한다
+
+src/.git ignore
+	-> react 폴더/파일 중 git에 올리지 않을 파일들을 추가/삭제 할 수 있다
+
+src/App.js(컴포넌트)
+	-> export default App; 을 작성해주어야 한다
+	-> 작성 시 첫글자는 반드시 대문자여야 한다
+		ex) <Header></Header>
+	-> 작성 시 클로징 태그는 작성하지 않아도 된다
+		ex)<Header />
+	-> 컴포넌트 작성 시 반드시 하나의 태그 안에 감싸주어야 한다
+		ex) <div> ... </div> (태그 이름을 써주지 않아도 된다) (React Fragment)
+	
+	-> 태그 내에 자바스크립트 코드를 넣고 싶을 때는 {}를 사용하면 된다.
+		ex) const Test = (props) => {
+			return ( <> {console.log(props)} )
+		     }
+	-> HTML class 사용 시, class라 작성하지 않고 className이라 작성해야 한다
+
+prop
+	-> 특정 컴포넌트에서 선언한 데이터를 다른 컴포넌트로 전달해줄 수 있다.
+		ex) 컴포넌트 내에서 <Main key=value /> 와 같은 형태로 전달할 수 있다
+	-> props를 전달받을 컴포넌트에서는 함수 매개변수로 작성해주면 된다.
+		ex) const Test = (props) = { return ( ... ) }
+		* 매개변수를 삽입하는 부분에 비구조 할당을 바로 사용할 수 있다.
+			ex) const Test = ( {value1, value2} ) => { return ( ... ) }
+	-> props를 웹 브라우저에 출력시키고 싶다면 {} 를 사용한다
+		ex) const Test = (props) = { return ( <> {props.property} </> ) }
+	-> 전달받은 매개변수 값이 없을 때 props의 기본 값을 설정할 수 있다.
+	-> 기본 props를 작성할 때에는 컴포넌트 생성 함수 바깥에 써야한다
+		ex) Main.defaultProps = { work: 'plaing' }
+	-> 완성된 컴포넌트를 하나의 컴포넌트로 감싸주어 하위 컴포넌트들을 props로 전달해줄 수 있다.
+		ex) const App = () => { return ( <Wrapper> <Header /> ... </Wrapper ) } in App.js
+			* Wrapper 컴포넌트는<Header />, <Main />과 같은 컴포넌트들을 props로 가지게 된다
+		ex) const Wrapper = (props) => { return ( <> {props.children} </> ) } in Wrapper.js
