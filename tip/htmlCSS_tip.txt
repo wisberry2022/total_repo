@@ -1,0 +1,314 @@
+BASIC_TIP
+
+HTML basic
+	- 아무 의미 없는 태그는 절대로 작성하지 않는다 ㅡ 웹 표준에 어긋난다.
+	- <head> 태그에 쓰는 css 파일은 작성 순서대로 CSS 파일이 임포트된다.(reset.css가 있다면 reset.css를 가장 먼저 쓴다)
+	- <hr>태그는 문장과 문장 사이에 구분선을 두기 위한 태그이다.
+	- reset.css 파일을 가장 먼저 작성하고, 그 다음 프레임워크/라이브러리 파일들을 순서대로 작성하고, 개인이 작성한 .css 파일은 라이브러리 링크를 모두 작성한 이후 작성한다
+		* ex) <link rel = "stylesheet" href = "./bootstrap.min.css">
+		       <link rel = "stylesheet" href = "./slick.css">
+		       <link rel = "stylesheet" href = "./main.css">	
+
+
+CSS basic 
+	- CSS에서 같은 property는 두 번 작성하지 않는다.
+		-> 두 번 작성할 경우 마지막에 작성한 property의 값이 적용된다.
+	- height는 왠만하면 auto;로 지정한다(특별한 경우가 아니면 height 값은 주지 않는다.)
+		-> 굳이 지정하고 싶다면 padding을 이용해서 height를 준다
+		-> background 사용 시에는 height를 사용하여야 한다.
+	- 변수를 사용할 수 있다(IE에서는 작동하지 않는다)
+		* ex) :root { --mc: #dc3545; } -> border: 1px solid var(--mc);
+	- 외부 스타일 시트가 내부 스타일 시트보다 우선적으로 적용되긴 하나, html 문서 내에서 내부 스타일 시트가 외부 스타일 시트가 적힌 링크보다 나중에 작성된다면, 내부 스타일 시트가 우선적으로 적용되는 경우가 있다.
+		* 의외로 body 태그내에 스타일 시트를 작성하는 것이 웹 표준에 위배되지는 않는다.(but 비권장)
+	- JS의 작업을 최소화하고, CSS로 클래스를 작성하여 JS가 CSS 클래스를 컨트롤하는 방향으로 작성한다.
+	- 클래스를 붙여 js로 컨트롤 하고 싶을 때는, 순번이 있는(<li>와 같은 요소들) 태그에 클래스를 붙이는 것이 좋다.
+
+======================================================================================================================================================
+
+HTML PRACTICE TIP	
+
+HTML <a> Tag
+	- 다른 요소를 position: absolute를 설정하여 띄울 경우, <a> 태그가 아래로 깔려 선택이 되지 않는 에러가 있다. 
+		* z-index를 설정하여 absolute된 요소보다 위에 오게 한다.
+	- <a href = "#"> 을 작성할 경우 해당 링크를 클릭 시 페이지의 맨 위로 올라가게 된다.
+		* #!을 입력하면 해결된다.
+	- 하이퍼링크에 줄 수 있는 값들
+		* / -> root 폴더로 이동(goLive 미설정 시 D드라이브까지, 웹페이지 설계 시 ~~.co.kr로 가게된다.)
+		* ../ -> 부모 폴더로 이동
+HTML <button> Tag
+	- <button> 태그는 내부의 텍스트를 항상 가로/세로 가운데 정렬을 해주려고 하기 때문에 의도적으로 width/height/font-size값을 줄 경우 정렬이 깨지는 경우가 있다.
+		-> width/height/font-size 값을 재조정하여 해결한다.
+
+HTML <form> Tag
+	- <form> 태그의 select에 들어가는 폰트는 noto-sans-kor가 적용되지 않고 나눔고딕이 자동으로 설정된다.
+
+HTML <img> Tag
+	- <img> 태그는 고정된 사이즈를 가지기 때문에 반응형 홈페이지 제작 시 원본 사이즈가 유지되기 때문에, 유연한 Size를 원한다면 background를 사용하는 것이 낫다.
+
+HTML <table> Tag
+	- <tr> 태그에는 margin이 적용되지 않는다.
+		* 이를 해결하기 위해 <table> 태그의 css에 border-spacing을 설정해준다.
+
+HTML <iframe> Tag
+	- <iframe> 태그를 사용할 경우 부모 요소에 relative를 설정하고 padding-bottom(56.25%)을 설정하여 높이를 주게 되면, 반응형이 되었을 때(뷰포트의 사이즈가 달라졌을 때도) 동영상의 scale이 유지된다.
+		- 16:9의 사이즈를 유지하게 하기 위해 56.25%(9/16)값을 사용한다.
+
+HTML <video> Tag
+	- video 태그 사용시 autoplay, muted(음성 제거)를 작성해주면 페이지 새로고침/접속 시 자동 재생된다.
+	- IOS, safari에서의 전체화면 방지를 위해 playsinline을 반드시 작성한다.
+
+HTML Entity Code
+	- &nbsp; -> space(한 칸 공백)
+	- &amp; -> &
+
+HTML 약도 넣기(카카오맵)
+	- 카카오맵 접속 -> 원하는 장소 클릭 -> 2번째 버튼 클릭 -> HTML 태그 복사 -> 소스 생성하기 -> 일반 지도 코드 복사 -> 붙여넣기
+===============================================================================================================================
+
+CSS PRACTICE TIP	
+
+CSS animation
+	- @keyframes <animation_name> {} 와 같이 작성한다. 이후 애니메이션을 적용할 클래스/아이디/요소에 animation: <animation_name>과 같이 작성한다.
+	- display: none; 이 설정된 것은 animation/transition이 적용되지 않는다.
+
+CSS background
+	- background-size: contain의 경우, background-image의 전체를 보여주는 속성이 있다.
+	- background shorthand: background: <color> <url> <repeat> <position>
+		* background-size와 background-position을 단축 속성으로 구분하기 힘들기 때문에 슬래시(/)를 사용하여 구분한다.
+	- background: transparent -> 배경이 사라진다
+
+CSS border-spacing
+	- HTML 태그 중 <table> 태그의 셀(<tr>)의 테두리 간격을 지정할 수 있다.
+		* 해당 기능을 이용해 margin을 주는 것과 같은 효과를 낼 수 있다.
+		ex) border-spacing: <가로 length> <세로 length>
+
+CSS color
+	- CSS에서 color는 3자리, 6자리 코드 중 하나를 작성할 수 있다.
+		- #000 -> 각 자릿수는 rgb를 의미한다. 
+			ex) #fe1 -> f: red e: green 1:blue
+		- #000000 -> 두 자리씩 rgb를 의미한다.
+			ex) #f2e3f1 -> f2: red e3: green f1: blue
+
+CSS display system
+	* CSS inline-block
+		- 서로 다른 컨텐츠(text) 길이 때문에 요소들의 크기가 일정해질 것 같지 않을 경우, display:inline-block; 을 설정하면 유연한 박스 크기를 갖게 된다.
+		- inline-block으로 설정된 자식 요소의 부모 요소에 text-align:center를 설정하면 inline-block 요소들이 가운데로 정렬된다.
+			* inline 요소도 마찬가지다.
+		- inline-block의 width를 설정하지 않으면 auto가 지정되는데 이 때, auto는 컨텐츠의 길이만큼이다.
+		- inline-block끼리 갭을 없에려면, inline-block을 감싸고 있는 부모 요소에 font-size: 0;을 설정해준다.
+		- inline-block은 텍스트와 같은 속성을 가지고 있기 때문에 실제 html 스크립트에서 inline-block 속성을 가진 요소들을 작성할 때 엔터를 해줄 경우 요소 사이에 gap이 생기지만, 이어 작성할 경우 gap이 사라진다.
+			ex) <span>hello</span><span>hello</span><span>hello</span> -> gap이 사라진다.
+			    <span>hello</span>
+			    <span>hello</span>
+			    <span>hello</span> -> gap이 생긴다.	
+		- inline-block의 경우 자식요소의 width들의 합이 부모요소의 width를 넘어갈 경우 inline처럼 한 줄에 정렬되지 않고 block처럼 세로로 쌓인다.
+	* CSS inline
+		- width, height, margin/padding의 top/bottom은 적용되지 않는다.
+		- margin / width의 경우 상하는 적용되지 않지만, padding의 경우 상하가 적용되지만 이는 실제 적용되는 것이 아니라 그렇게 보이는 것 뿐이다.
+		- inline 속성은 상위 요소의 width를 초과하면 그 크기가 흘러넘친다
+	* display:none
+		- 스크린 리더기가 display:none으로 설정된 요소의 텍스트를 읽지 못한다.
+
+CSS figure
+	- figure 태그 안에 이미지를 넣었을 경우, height값을 일정하게 주기 위해서는 figure에 height값을 주지말고, img 태그에 직접 height값을 설정한다.
+
+CSS filter
+	- filter를 사용할 경우 자식 요소들에게도 그 설정값이 상속이 된다.
+
+CSS flex
+	- space-between 사용 시 가운데에 오는 요소는 부모 요소(flex-box) 크기를 기준으로 정 가운데에 오는 것은 아니다.
+	- flex container에 flex를 설정할 경우, flex-item이 하나일 경우, 남은 공간을 모두 차지해버린다(width,height 모두)
+		-> width값을 의도적으로 주어 고정시킬 수 있다.
+	- flex는 기본적으로 stretch가 되어버리는데, 이 때 div로 감싸버리면 요소가 stretch되어버리지 않는다.
+	- float:left나 float:right를 사용할 경우, display 속성은 무시된다.
+	- flex-flow는 flex-direction과 flex-wrap을 동시에 설정해줄 수 있는 속성이다.	
+	- flex-grow
+		-> flexbox의 flex-item들이 동등한 크기를 가졌음에도 컨텐츠 크기에 의해 일부 item은 자기 크기를 가지지 못하는 경우가 있다. 이 때 flex-grow를 사용하여 남은 여백을 채울 수 있다
+
+CSS float
+	- 각 요소에 float을 줄 경우, 요소를 감싸고 있는 부모 요소의 크기가 사라지기 때문에 width나 height를 별도로 지정해주어야 한다.
+	- float을 사용할 경우 가상 요소를 사용하여 임의의 박스를 만들어주어 부모 요소에 크기를 다시 지정해줘야 한다.
+		ex) .container::after { content: ''; display: block; clear: both; }
+	- 새로운 요소가 추가될 경우, 요소의 크기를 임의로 설정해줘야한다.
+	- 가운데 정렬을 하고 싶을 경우 float이 아닌, 각 요소들을 inline-block으로 처리하고 요소를 감싸는 부모 요소에 text-align: center를 부여한다.
+
+CSS height
+	- height는 부모요소로부터 상속을 받지 못한다(자식 요소의 height에 100%를 주더라도 부모의 height를 상속받지 못한다.)
+
+CSS id
+	- Tag 선택자/Class 선택자보다 우선적으로 적용된다.(Tag 선택자/Class 선택자보다 계급이 높다)
+	- id는 두 개의 id 혹은 다른 class와 함께 쓰일 수 없고 단 하나의 id만 올 수 있다.
+		* <div id = "example example2"> (x) / <div id = "example"> (o)
+	- id는 보통 자식들을 감싸는 큰 부모 요소에만 작성하는 경우가 많다.
+
+CSS img
+	- max-width:100% 를 사용할 경우 이미지 파일의 사이즈가 원본이 아닌 화면 크기에 따라 적절히 조정된다.
+
+CSS line-height
+	- line-height 속성을 이용하여 속성을 세로로 가운데 정렬할 수 있다.
+	- inline 요소에는 적용되지 않고 block 요소에만 적용된다.
+	- leading(행간) 영역은 font-size와 line-height의 차이에 의해 결정된다
+		- (Line-height - font-size)/2 = half-leading
+			* line-height가 font-size보다 작을 경우 content 영역이 인라인 박스를 빠져나오게 된다 이후 half-leading(상/하)들은 인라인 박스의 반으로 적용된다.
+	- 단위가 없는 숫자를 사용하는 것이 좋다( 하지만 line-height: 1; 은 작성하지 않는 편이 좋다 )
+
+CSS linear-gradient()
+	- 서로 다른 색상들을 자연스럽게 섞어서 표현할 수 있게 해주는 함수
+		* background: linear-gradient(<color-value_1>, <color-value_2>);
+		* 이 때, color-value마다 퍼센테이지를 입력할 수 있는데, 최초로 입력되는 color-value의 퍼센테이지가 더 높을 경우 명확한 경계선이 생겨버린다.
+CSS margin
+	- margin 상쇄/겹침(Margin-collapsing)
+		- 특정 요소에 서로 다른 클래스가 적용되어 margin 값이 겹치게 되면 두 개의 margin값이 합쳐지는 것이 아니라, 둘 중 더 큰  margin값만 적용된다. -> margin 겹침 문제(margin collapse)
+		- 이를 방지하기 위해 margin의 한 쪽 방향으로만 설정해준다(margin-bottom / margin-top)
+	- line-height를 사용하면 margin값이 늘어나는 문제가 생긴다
+	- 별도의 값을 설정하지 않을 시 margin 값은 요소의 font-size를 그대로 따라간다
+	- margin에 음수값을 줄 경우 요소의 size를 줄이거나, 본래 위치에서 이동시킬 수 있다.(negative margin)
+		* top/left에 음수 마진 -> 해당 방향으로 (음수 마진 * -1)만큼 요소가 이동
+		* bottom/right에 음수 마진 -> 음수 마진 설정한 다음 요소를 해당 방향으로 (음수 마진 * -1)만큼 끌어당긴다. 
+			! 자신의 크기가 줄어든다.
+
+CSS max-width
+	- 요소의 크기가 설정한 값만큼 넘어가지 않는다. 이 때 설정한 값의 기준은 실제 요소(이미지면 이미지 자체의 크기)의 전체 크기다.
+
+CSS outline
+	- 레이아웃을 무너뜨리지 않는다.
+
+CSS opacity
+	- 설정된 투명도는 배경뿐만 아니라 글자도 투명하게 설정된다.(background의 색상을 rgba로 설정하는 것을 추천)
+
+CSS padding
+	- HTML 요소에 padding을 적용할 경우 설정한 padding만큼 요소의 width or height가 늘어난다.
+		* 이를 방지하기 위해 box-sizing: border-box 를 사용한다
+
+CSS position
+	- static/relative/absolute/fixed/sticky
+		- relative: relative로 설정된 요소가 하위 요소의 포지셔닝의 기준이 된다
+			* 위치뿐만 아니라 width / height의 기준이 될 수 있다.
+		- absolute: 설정한 요소는 width값이 사라진다.
+			* 포지셔닝의 기준은 relative로 설정된 부모 요소(or 부모의 부모/부모의 부모의 부모...)이다.
+				-> absolute로 설정된 부모 요소도 기준점으로 작용한다.
+			* absolute 상태가 된 경우, % 단위의 기준은 relative로 설정된 기준 요소의 width/height를 따른다.
+			* vertical-align / line-height와 같은 속성으로 수직 정렬을 하는 것이 불가능하다.
+			* margin: 0 auto를 주는 것이 불가능하다.
+			* 양방향(left/right or top/bottom)에 값을 줄 경우 컨텐츠의 길이가 확장된다.
+			* absolute로 floating된 요소들에 rgba값이 설정되어있을 경우, alpha값이 합산된다.
+			* absolute 처리된 요소들은 block 속성을 가지게 된다.
+			* absolute 처리된 부모 요소에 height가 특정되지 않은 상태라면 transform을 지정해도 이동되지 않는다. -> absolute처리된 부모 요소에 height값을 특정해야 한다.
+				-> 자식 요소들이 함께 float되면서 absolute처리된 부모 요소는 height값을 잃어버린다. 따라서 height값을 잃어버린 부모 요소에게 transform을 적용해도 자식요소들은 이동하지 않는다.
+		- fixed
+			* 기준점은 무조건 viewport이다.
+			* fixed로 지정된 요소들은 그 크기가 부모 요소를 넘어가더라도 스크롤바를 생성하지 않는다.
+		- sticky
+			* sticky 사용을 위해서는 top/bottom/left/right 중 하나의 값을 반드시 설정해주어야 한다.
+			* 기준점은 sticky를 지정한 요소의 부모요소이다. (이 때 부모요소에 반드시 position이 설정되있어야 하는 것은 아니다.)
+			* sticky는 부모 요소의 내부에서만 fixed처럼 작동한다. 초기 위치는 sticky를 지정했을 때 설정해주었던 위치값(top/bottom/left/right)에서 고정이다.
+			* sticky 설정 시, 다음 섹션의 position은 relative로 설정해주어야 한다 
+			  position을 설정해주지 않으면 default값인 static으로 설정되는데, 이 때 static의 z-index값이 sticky보다 낮기 때문에 
+			  미설정시 sticky를 지정한 다음 섹션이 보이지 않는 문제가 생긴다
+	- z-index: 요소의 겹침 순서를 결정
+	- 요소를 가운데로 오게 하는 공식
+		* element {position: aboslute; top: 50%; left: 50%; transform: translate(-50%, -50%);} 
+	- relative/absolute/fixed 모두 포지셔닝의 기준이 될 수 있다.
+	- 포지셔닝 기준이 fixed가 될 경우, 기준점을 중심으로 배치된 다른 요소들 또한 fixed의 특성처럼 스크롤하더라도 제 자리를 유지한다.
+	- top/bottom/left/right에 값을 설정했을 경우, 차후에 다른 위치에 값을 주고자 할 때는 이전에 설정했던 값에 auto를 반드시 설정해주어야 한다.(transition 설정 시 유용)
+		* .box가 적용된 요소에 마우스를 갖다대었을 때 top/left에서 50% 떨어진 도형을,  오른쪽 구석으로 이동시키고 싶을 때
+			-> .box .b_1 { position:absolute; top: 50%; left: 50%; } -> .box:hover .b_1 { bottom: 0; right: 0; } (X) / .box:hover .b_1 { top: auto; left: auto; bottom: 0; right: 0; } (O)
+	- position을 설정했다하더라도 이후에 등장한 html tag에 position이 설정되어있을 경우 앞전에 position 설정이 되어있었던 요소를 뒤덮어버린다.
+
+CSS Reset Code
+	 - 기존 HTML 태그에 설정된 Style값을 개발자가 컨트롤 할 수 있도록 특정 태그들을 골라 초기값을 지정하는 것
+
+CSS Responsive 
+	- 폰트 크기를 설정하면 디바이스에 따라 화면에 들어오지 않는 경우가 있다.
+		-> vw를 사용할 경우 디바이스의 전체 width에 비례한 폰트 사이즈가 설정되어 문제를 해결할 수 있다.
+	- pc화면을 위해 설정해두었던 width값은 반응형 때에는 auto로 바꿔야한다.
+	- 반응형 화면 때에 JS로 적용했던 스타일들이 그대로 적용되어 pc화면으로 돌아갔을 때 제대로 작동이 되지 않을 때가 있다. 이 때는, js/jquery를 통해 반응형 때 인라인으로 붙였던 style을 제거해주어야 한다.
+		-> $('.your_class').removeAttr('style');
+	- 반응형 제작 후 휴대폰에서 css가 적용되지 않을 경우, main.css?ver=1.1 을 작성하여 버전을 명시하면 된다.
+
+CSS text-overflow
+	- white-space:nowrap;과 함께 사용하여, text-overflow: ellipse를 사용하면 넘치는 텍스트는 ... 처리가 된다. 하지만 텍스트를 감싸는 요소에 width를 설정하고 overflow:hidden을 설정해주어야 한다.
+		ex) span { width: 350px; overflow: hidden; white-space: nowrap; text-overflow: ellipse }
+
+CSS transition
+	- transition은 바뀌기 이전 요소에 설정을 해야 한다. 만약 이벤트 발생 후에 transition을 삽입하면 이벤트 종료 시 transition이 작동되지 않는다.
+	- 위치값이나 크기값이 auto로 설정될 경우 transition이 작동되지 않는다.
+
+CSS transform
+	- 요소 자신을 움직이는 속성(설정하여도 layout이 깨지지 않는다)
+		* 부모 요소의 box를 건드리지 않음
+	- scale: 본래 요소보다 더 크게 사이즈를 조정할 수 있다.
+		* ex) transform: scale(2.0) -> 2배 커지기 / transform: scale(0.2) -> 0.2배까지 줄어들기
+	- transform에 여러 값을 지정할 수 있다.
+		* ex) transform: translate(-50%, -50%) rotate(45deg) -> 속성 위치에 따라 결과가 달라진다.
+	- translate로 설정하여 조정한 위치를 다시 원위치시키려면 0을 넣어주면 된다.
+		* ex) transform: translateY(100px); -> transform: translateY(0);
+
+CSS visibility
+	- hidden: 요소를 숨길 수 있다. (opacity만 사용 시 컨텐츠 자체만 투명하게 되고 기능은 그대로 살아있다)
+
+CSS width 단위
+	- auto: 부모 요소로부터 주어진 가용 너비에서 margin 크기를 제외한 너비를 width 속성값으로 사용(width 명시하지 않을 시 기본값) 
+		-> 부모 요소의 width - 적용된 margin
+	- auto 값을 이용하여 요소를 가운데로 배치할 수 있다.
+		-> 부모 요소의 width - ( 적용된 margin값 * 2 )
+	- px: 절대값
+	- %: 상대값(부모 요소의 크기가 중심)
+
+CSS z-index 
+	- z-index는 부모 요소를 뛰어넘을 수 없다.
+	- z-index가 설정된 요소는 기존에 기준점으로 삼고 있던 부모 요소에 영향을 받게 되지만, 또 다른 부모 요소에 position이 설정될 경우 기존에 설정한 z-index가 auto(0)가 되버려 먹통이된다.
+		-> 새롭게 position이 설정된 부모 요소에 z-index를 재설정한다.
+
+CSS 가상 요소
+	- 사용법:  name::가상요소 이름 { property: value }
+	- content는 필수로 적어야 한다(글자를 넣지 않을 거라면 ""; 라고 작성한다)
+	- display:block; 으로 설정하여 텍스트 이외 도형을 그릴 수 있다.
+	- 가상 클래스와 함께 쓸때는 가상 클래스를 먼저 작성한 후 가상 요소를 작성한다.
+		ex) a:hover::before
+	- 가상 요소는 box-sizing: border-box의 적용범위가 아니기 때문에 가상 요소 작성 시 별도로 작성하여야 한다.
+		ex) a::before { content: ''; display: block; box-sizing: border-box; }
+			! 미설정시, border-box를 설정하지 않은 것처럼 적용된다.
+	- 가상 요소에도 margin 값을 설정할 수 있다.
+		* display:inline, block 설정에 따라 각 값들이 가지는 특성 또한 동일하게 적용된다.
+	- 가상 요소는 JS로 컨트롤 할 수 없다
+	- 가상 요소를 absolute를 통해 띄우고, 기준점을 가상 요소를 붙인 요소에 주었다면, 가상 요소가 기존 요소를 뒤덮어버리게 된다. 이 때, 기존 요소를 박스로 싸준 뒤, 새롭게 싸준 박스에 ::before를 사용하여 작업한다.
+		-> 가상 요소가 기존 요소를 뒤덮어버리고 있으니까 새로운 요소를 만들어 그 요소에 가상 요소를 만들어 덮지않게 만드는 것.
+
+CSS 단위
+	- em: 현재 요소(font-size) 크기의 몇 배( 크기 미설정 시 12px - 1em ) 
+		* 포토샵에서 지정된 자간크기(보통 100단위)를 1000으로 나눈 값이 CSS 코딩 내 px값이다.
+			ex) 포토샵 자간: -25 -> CSS 코딩: letter-spacing: -0.025em;
+	- rem: 문서의 최상위 요소(html 요소의 크기)의 몇 배( 크기 미설정 시 1rem - 16px; )
+		-> rem을 사용하면 나중에 사용하는 속성의 단위도 rem으로 통일하는 것이 편리하다.
+	- vw: viewport를 기준으로한 width
+	- 단위 작성 시 소수점 자리가 0일 경우 생략 가능하다
+		ex) line-height: 0.5; = line-height: .5;
+
+CSS 선택자 우선순위
+	 - id가 class 보다 우선순위가 높다
+	 - class의 값이 같을 경우, 가장 나중에 쓰인 class가 우선적으로 적용된다
+	 - 같은 HTML 요소를 두고 서로 다른 class를 적용한 경우, css 속성의 적용은 순서대로다.
+
+CSS 선택자
+	- 자식 선택자 : > ex) .container > li ( .container의 자식 관계에 있는 모든 <li> 태그를 선택 )
+	- 후손 선택자 : .container li ( .container의 자손 관계에 있는 모든 <li> 태그를 선택:  .container > li 와 의미가 같다. )
+		* 선택한 요소의 첫번째 자식요소가 아닐경우 가상 클래스(nth-child)는 적용되지 않는다.
+	- 인접 선택자
+	- 형제 선택자
+	- 속성 선택자 : id, class, type에 들어간 이름으로 선택할 수 있다.
+		* ex) <li class = "col"></li> -> [class = "col"]
+	- 가상 선택자
+		- nth-child(n)의 경우 해당 요소가 등장한 순서가 아니라, 전체 요소 중 몇 번째인가를 적어주어야 한다.
+			ex) <div class = "hello"><h1>...</h1><div>...</div><div>...</div></div> -> hello 클래스 자식 중 처음으로 등장하는 div를 선택하고 싶을 때 -> .hello div:nth-child(2) (O) / .hello div:nth-child(1) (X)
+		- nth-of-type의 경우 요소의 type을 기준으로 선택할 수 있다.
+			ex) <div class = "hello"><h1>...</h1><div>...</div><div>...</div></div> -> hello 클래스 자식 중 처음으로 등장하는 div를 선택하고 싶을 때 -> .hello div:nth-of-type(1)
+	* CSS 선택자의 경우 선택한 요소를 중심으로 상위에 있는 요소들은 선택할 수 없다.
+	* CSS에서 스타일을 작성할 때 클래스에 어떤 것을 더 붙여 선택할 경우 CSS 적용 우선순위에 변동이 생길 수 있다.
+	* 일반적으로 div만을 선택자로 지정하지는 않는다.(중복되는 경우가 많기 때문에)
+
+==========================================================================================================================================================
+
+GITHUB로 웹 호스팅하기
+	- github repository -> settings -> pages -> branch main / root
+	- github repository -> Code -> Add file -> upload file -> url 접속 -> root 폴더에 있는 index.html이 표기된다.

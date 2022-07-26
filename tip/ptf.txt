@@ -1,0 +1,7 @@
+14시 ~ 15시
+이이름_화면구현.zip
+
+포트폴리오
+jquery(+responsive) -> 3개
+vanilla JS -> 1개
+REACT -> 1개 ~ 3개(유동적)

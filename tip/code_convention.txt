@@ -1,0 +1,33 @@
+프론트엔드 코드 컨벤션
+	- 웹 페이지를 HTML 태그로 작성할 때 <div class = "wrap"></div>로 모두 감싼다
+	- Semantic Tag <main> IE에선 지원하지 않는다.
+	- Semantic Tag <section> 태그에는 이름(클래스 등)을 붙여줘야 한다
+	- 웹 아이콘의 경우 font-weight를 적용하지 않는다
+	- <h1 ~ 6> 태그 내부에는 div와 같은 box 태그를 사용하지 않는 것이 일반적이다.
+		-> 불가피할 경우에만 사용
+	- margin은 일반적으로 아래로 주는 것이 좋다.(margin-bottom)
+	- reset css에서 body에 line-height:1을 설정해주지 않으면 줄간격이 어색해진다.
+	- h2 Tag는 한 Section의 전체 Title로 쓰일 때가 많다
+	- id는 많이 사용하지 않는 것이 좋다.
+		* wrap, <main> Tag에는 id를 사용하지 않는다.
+	- inline 태그로 block 요소를 감싸지 않는다	
+		* 하지만 <a> 태그는 금지
+	- <h2>태그 안에 <div> 태그를 삽입하지 않는다.
+	- <p> 태그 안에 텍스트 이외의 것은 삽입하지 않는 것이 좋다
+	- border를 없엘때는 border:none; 보다는 색깔을 빼는 것이 좋다. 
+	- 팝업창에 해당하는 html 코드는 html 문서의 <body> 태그 내에서도 가장 위에 쓴다.
+		* 수정 시 바로 열람하여 수정하기 위해
+	- <h1>, <nav>, <article>, <aside>는 html 문서 내에서 한 번만 쓴다.
+
+CSS 속성 작성 순서
+	- position(z-index 포함) -> display 순 -> margin/position -> etc
+
+변수 작성법
+	- wrap-container: kebob-case
+	- Wrap: Pascal Case
+	- wrap_container: snake_case
+	- wrapContainer: camelCase
+	- BEM: Wrap_container-inner
+
+기타
+	- 회사 로고 같은 것을 사용할 때는 .jpg/png 파일이 아니라 SVG파일을 활용한다.(SVG 파일은 확대를 하더라도 화면 열화가 일어나지 않는다)

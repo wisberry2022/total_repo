@@ -1,0 +1,19 @@
+ctrl + shift + R -> 캐시 리로드
+
+WEB FONT
+	-> 한 웹페이지에 최대로 사용하는 폰트는 두 개.
+	-> License 문제를 민감하게 인지해야 한다.
+		* Google Webfont는 License Free이다.(자유롭게 사용해도 무방)
+		* 인기있는 폰트 순서로 자동으로 정렬된다.
+	-> WEBFONT의 아이콘들은 inline-block 속성을 가진다
+	-> 100(thin), 300(light), 500, 700, 900
+
+Noto sans serif
+	-> font-size가 홀수일 때 가독성이 좋다.
+
+
+Video
+	-> 60fs: 초당 60장의 이미지가 재생
+
+etc
+	-> 원본 이미지가 열화되거나 화질이 좋지 않을 때에는 격자무늬를 덮어주면 좋아진다.

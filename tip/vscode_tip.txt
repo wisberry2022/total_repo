@@ -1,0 +1,8 @@
+vscode emmet
+	- 태그 작성 시 선택자를 사용할 수 있다
+		* ex) ul>li*3 
+	- +를 사용할 수도 있다
+		* ex) .left+.right
+	- div.name0$ -> <div class = "name01">, name02, name03 클래스 이름을 가진 태그가 생긴다.
+	- 중괄호( {} )를 활용하여 태그 내부에 들어갈 컨텐츠를 지정할 수 있다.
+		* ex) ul>li*2{BOX0$} -> <ul><li>BOX01</li><<li>BOX02</li></ul>

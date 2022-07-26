@@ -1,0 +1,2 @@
+git rm -f <my_submodule>
+git submodule add --force <github 주소> <로컬 파일 경로>

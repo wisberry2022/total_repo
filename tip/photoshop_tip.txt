@@ -1,0 +1,36 @@
+
+단축키
+	- F7: Layers (or Window 옵션에서 Layers 체크)
+	- F: 창 전체화면
+	- Tab: 도구 숨기기
+
+포토샵에 위치한 이미지 파일로 저장하기
+
+Background
+	- background로 넣은 이미지는 원본 파일을 그대v로 사용해야 한다. Crop을 사용하여 별도로 지정하지 않는다.
+
+Canvas
+	- Ctrl + +/- -> Canvas 확대/축소
+	- Ctrl + ; -> Grid 숨기기/나타내기
+	- Ctrl + R -> 격자 숨기기/나타내기
+	- Shift + 방향키 -> 10px씩 이동
+
+Guide Line
+	- alt + shift +; -> Guideline 잠금(canvas size 조정 후 잠금 할 것!)
+
+Grid 켜기
+	- View -> New Guide Layout
+
+* Canvas Size 1900 설정 -> * Grid Layout 켜기
+
+Layer
+	- Layer 중복 선택 후 Ctrl + T -> transform(그룹 크기 조정 가능)
+	- Layer 중복 선택 후 Ctrl + G -> 그룹만들기
+
+Toolbox tip
+	스포이드
+		-> image에 들어간 색깔이 무슨 색깔인지 알 수 있다.
+
+외부 사진 Rectangle에 넣기
+	-> Ctrl + T를 누른 뒤 Shift를 누르면서 크기 조정을 하면 원본이 무너지지 않고 비율 그대로 늘어나게 된다.
+
