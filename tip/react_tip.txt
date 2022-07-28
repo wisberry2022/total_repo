@@ -51,6 +51,8 @@ prop
 		ex) const Wrapper = (props) => { return ( <> {props.children} </> ) } in Wrapper.js
 
 State
+	-> React 내에서 선언하는 변수
+		* let이나 var과의 차이점으로는 
 	-> 컴포넌트 안에서 관리된다
 	-> Render 함수 이전에 state를 사용해야 한다
 		ex) function App() { const [TEST, setTest] = useState() return ( ... ) }
