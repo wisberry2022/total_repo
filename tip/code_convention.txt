@@ -18,6 +18,8 @@
 	- 팝업창에 해당하는 html 코드는 html 문서의 <body> 태그 내에서도 가장 위에 쓴다.
 		* 수정 시 바로 열람하여 수정하기 위해
 	- <h1>, <nav>, <article>, <aside>는 html 문서 내에서 한 번만 쓴다.
+	- <h1 ~ 6> 태그는 연속적으로 사용하지 않는다
+		* <h1></h1><h2></h2> ... -> 금지
 
 CSS 속성 작성 순서
 	- position(z-index 포함) -> display 순 -> margin/position -> etc
