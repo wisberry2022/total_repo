@@ -4,6 +4,7 @@ React Start
 	-> 리액트 프로젝트 시작: npx create-react-app <folder name>
 		ex) npx create-react-app test_react
 	-> 리액트 실행: npm start
+	-> 리액트 빌드: npm run build
 
 npm install을 이용하면 다른 PC에서도 동일한 환경으로 리액트를 사용할 수 있다
 
@@ -49,10 +50,15 @@ prop
 		ex) const App = () => { return ( <Wrapper> <Header /> ... </Wrapper ) } in App.js
 			* Wrapper 컴포넌트는<Header />, <Main />과 같은 컴포넌트들을 props로 가지게 된다
 		ex) const Wrapper = (props) => { return ( <> {props.children} </> ) } in Wrapper.js
+	-> 태그 안에 들어간 prop 요소들은 모두 {}를 사용해야 한다.
+		ex) function Header(props) { return ( <header> ... {props.member.map(el => <li>{el.name}</li>)} </header> ) }
 
 State
 	-> React 내에서 선언하는 변수
-		* let이나 var과의 차이점으로는 
+		* 페이지 내에서 특정 이벤트에 의해 변동사항이 생기는 데이터를 다룰 때 사용한다.
+		* var, let를 통해 선언된 변수는 스크립트 내에서 변수 내용을 변경할 수 있어도 다시 DOM을 다시 렌더링해주지 못한다. 
+		  하지만 state를 통해 변수를 선언하면 변수 내용 변경 시 웹 브라우저에서 새로고침 없이 DOM을 자동으로 다시 렌더링해주기 때문에 state를 사용한다
+
 	-> 컴포넌트 안에서 관리된다
 	-> Render 함수 이전에 state를 사용해야 한다
 		ex) function App() { const [TEST, setTest] = useState() return ( ... ) }
