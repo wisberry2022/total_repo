@@ -198,6 +198,7 @@ CSS position
 		- fixed
 			* 기준점은 무조건 viewport이다.
 			* fixed로 지정된 요소들은 그 크기가 부모 요소를 넘어가더라도 스크롤바를 생성하지 않는다.
+			* fixed 사용 후 그 자식에 fixed를 사용할 경우 고장의 원인이 된다
 		- sticky
 			* sticky 사용을 위해서는 top/bottom/left/right 중 하나의 값을 반드시 설정해주어야 한다.
 			* 기준점은 sticky를 지정한 요소의 부모요소이다. (이 때 부모요소에 반드시 position이 설정되있어야 하는 것은 아니다.)

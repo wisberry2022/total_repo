@@ -1,5 +1,7 @@
 React 기초
 
+React 파일
+
 React Start
 	-> 리액트 프로젝트 시작: npx create-react-app <folder name>
 		ex) npx create-react-app test_react
@@ -14,7 +16,12 @@ package.json
 src/.git ignore
 	-> react 폴더/파일 중 git에 올리지 않을 파일들을 추가/삭제 할 수 있다
 
-src/App.js(컴포넌트)
+빌드
+	-> 빌드 이후에 .js/.html/.css를 수정하였을 경우 실시간 반영은 되지 않는다. 따라서 새롭게 빌드를 해주어야 한다
+
+==========================================================================================
+
+컴포넌트(src/App.js)
 	-> export default App; 을 작성해주어야 한다
 		* export default 뒤에 곧바로 컴포넌트 리턴 함수를 지정해줄 수도 있다
 			ex) export default function Header() { return ... }
