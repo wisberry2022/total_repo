@@ -61,6 +61,10 @@ HTML <video> Tag
 	- video 태그 사용시 autoplay, muted(음성 제거)를 작성해주면 페이지 새로고침/접속 시 자동 재생된다.
 	- IOS, safari에서의 전체화면 방지를 위해 playsinline을 반드시 작성한다.
 
+HTML Custom Attributor
+	- data- 와 같은 형태로 지정할 수 있다. 'data-' 이후에 오는 문자열은 사용자가 마음대로 지정할 수 있다.
+		ex) <li data-num = "value"></li>
+
 HTML Entity Code
 	- &nbsp; -> space(한 칸 공백)
 	- &amp; -> &
@@ -75,6 +79,10 @@ CSS animation
 	- @keyframes <animation_name> {} 와 같이 작성한다. 이후 애니메이션을 적용할 클래스/아이디/요소에 animation: <animation_name>과 같이 작성한다.
 	- display: none; 이 설정된 것은 animation/transition이 적용되지 않는다.
 
+CSS attr
+	- HTML 태그에서 작성한 data- 태그의 값을 CSS property의 value로 가져올 수 있다.
+		ex) <div data-title="test"></div> in HTML => div::after { content: attr(data-title) ... }
+
 CSS background
 	- background-size: contain의 경우, background-image의 전체를 보여주는 속성이 있다.
 	- background shorthand: background: <color> <url> <repeat> <position>
@@ -86,6 +94,9 @@ CSS border-spacing
 	- HTML 태그 중 <table> 태그의 셀(<tr>)의 테두리 간격을 지정할 수 있다.
 		* 해당 기능을 이용해 margin을 주는 것과 같은 효과를 낼 수 있다.
 		ex) border-spacing: <가로 length> <세로 length>
+
+CSS border-radius
+	- px로 줄 경우, 요소의 font-size의 절반 값을 px로 주면 원이 되어 나온다.(만약 padding값이 있을 경우 padding값도 더해준다)
 
 CSS color
 	- CSS에서 color는 3자리, 6자리 코드 중 하나를 작성할 수 있다.
@@ -138,6 +149,7 @@ CSS float
 		ex) .container::after { content: ''; display: block; clear: both; }
 	- 새로운 요소가 추가될 경우, 요소의 크기를 임의로 설정해줘야한다.
 	- 가운데 정렬을 하고 싶을 경우 float이 아닌, 각 요소들을 inline-block으로 처리하고 요소를 감싸는 부모 요소에 text-align: center를 부여한다.
+	- float된 요소들은 서로 height가 같아야 레이아웃을 유지한다 (flex는 height가 같지 않더라도 자동으로 크기가 맞춰진다)
 
 CSS height
 	- height는 부모요소로부터 상속을 받지 못한다(자식 요소의 height에 100%를 주더라도 부모의 height를 상속받지 못한다.)
@@ -260,6 +272,7 @@ CSS transform
 		* ex) transform: translate(-50%, -50%) rotate(45deg) -> 속성 위치에 따라 결과가 달라진다.
 	- translate로 설정하여 조정한 위치를 다시 원위치시키려면 0을 넣어주면 된다.
 		* ex) transform: translateY(100px); -> transform: translateY(0);
+	- inline 요소에는 transform을 적용시킬 수 없다(block 요소에만 transform이 적용된다)
 
 CSS visibility
 	- hidden: 요소를 숨길 수 있다. (opacity만 사용 시 컨텐츠 자체만 투명하게 되고 기능은 그대로 살아있다)
