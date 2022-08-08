@@ -175,6 +175,8 @@ CSS linear-gradient()
 	- 서로 다른 색상들을 자연스럽게 섞어서 표현할 수 있게 해주는 함수
 		* background: linear-gradient(<color-value_1>, <color-value_2>);
 		* 이 때, color-value마다 퍼센테이지를 입력할 수 있는데, 최초로 입력되는 color-value의 퍼센테이지가 더 높을 경우 명확한 경계선이 생겨버린다.
+	- linear-gradient를 활용하여 절반만 보이는 background를 설정할 수 있다
+		ex) background: linear-gradient(#008850 50%, transparent 50%);
 CSS margin
 	- margin 상쇄/겹침(Margin-collapsing)
 		- 특정 요소에 서로 다른 클래스가 적용되어 margin 값이 겹치게 되면 두 개의 margin값이 합쳐지는 것이 아니라, 둘 중 더 큰  margin값만 적용된다. -> margin 겹침 문제(margin collapse)
@@ -215,6 +217,7 @@ CSS position
 			* 양방향(left/right or top/bottom)에 값을 줄 경우 컨텐츠의 길이가 확장된다.
 			* absolute로 floating된 요소들에 rgba값이 설정되어있을 경우, alpha값이 합산된다.
 			* absolute 처리된 요소들은 block 속성을 가지게 된다.
+				-> display: block을 해주지 않아도 된다.
 			* absolute 처리된 부모 요소에 height가 특정되지 않은 상태라면 transform을 지정해도 이동되지 않는다. -> absolute처리된 부모 요소에 height값을 특정해야 한다.
 				-> 자식 요소들이 함께 float되면서 absolute처리된 부모 요소는 height값을 잃어버린다. 따라서 height값을 잃어버린 부모 요소에게 transform을 적용해도 자식요소들은 이동하지 않는다.
 		- fixed
