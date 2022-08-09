@@ -292,6 +292,7 @@ CSS z-index
 	- z-index는 부모 요소를 뛰어넘을 수 없다.
 	- z-index가 설정된 요소는 기존에 기준점으로 삼고 있던 부모 요소에 영향을 받게 되지만, 또 다른 부모 요소에 position이 설정될 경우 기존에 설정한 z-index가 auto(0)가 되버려 먹통이된다.
 		-> 새롭게 position이 설정된 부모 요소에 z-index를 재설정한다.
+	- absolute처리 된 요소들의 z-index값이 같을 경우 DOM TREE 렌더링 순서에 따라 가장 나중에 렌더링된 요소(HTML 태그에서 가장 마지막에 쓰인 태그)가 가장 앞에 온다
 
 CSS 가상 요소
 	- 사용법:  name::가상요소 이름 { property: value }

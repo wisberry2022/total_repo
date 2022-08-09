@@ -155,6 +155,14 @@ Vanilla JS DOM
 	ex) window.onload = function() { ... }
 		-> 자바스크립트는 웹 브라우저가 HTML 코드를 모두 파싱하여 DOM 트리를 모두 생성한 후에 작동하는데, 위 코드는 DOM 트리 생성 이후 자바스크립트를 실행하겠다는 초기함수이다.
 
+자바스크립트 이벤트
+	* mouseup 이벤트
+		- 어떤 element에 click-event가 발생하면, mousedown, mouseup 이벤트도 함께 발생한다
+			-> mousedown: 사용자가 마우스를 눌렀을 때 발생
+			-> mouseup: 사용자가 마우스를 뗐을 때 발생
+		- 이벤트 발생 순서
+			-> mousedown - mouseup - click
+
 자바스크립트 이벤트리스너
 	ex) document.querySelector('name').addEventListener(<event>, <call-back>)
 		-> call-back 함수에는 함수 선언(function() { ... })이나 함수명(function)만 올 수 있다. 
