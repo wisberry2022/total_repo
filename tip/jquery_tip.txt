@@ -1,0 +1,11 @@
+JQuery Tip
+
+ - $(selector).index()
+ 	-> 선택한 요소의 index값, 즉 순번을 받아올 수 있다
+	-> parameter를 넣지 않을 경우, 렌더링된 DOM Tree를 기준으로 index를 반환하기 때문에, 선택자로 선택한 요소앞에 다른 무언가가 있을 경우, 다른 숫자를 리턴할 수 있다
+	-> parameter로 실제 index를 찾고자 하는 요소를 넣으면 실제 찾고자 하는 요소들 중 자신의 순번을 리턴하게 된다
+
+ - $('html, body').animate( {style}, time )
+	-> jquery로 애니메이션을 줄 수 있는 코드
+	-> 스크롤을 내리고 싶다면, {style}에, { scrollTop: 숫자 }를 입력한다.
+	-> time은 애니메이션이 진행되는 시간을 의미한다
