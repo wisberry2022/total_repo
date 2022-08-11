@@ -151,6 +151,9 @@ CSS float
 	- 가운데 정렬을 하고 싶을 경우 float이 아닌, 각 요소들을 inline-block으로 처리하고 요소를 감싸는 부모 요소에 text-align: center를 부여한다.
 	- float된 요소들은 서로 height가 같아야 레이아웃을 유지한다 (flex는 height가 같지 않더라도 자동으로 크기가 맞춰진다)
 
+CSS font
+	- font-size는 font의 높이다.
+
 CSS height
 	- height는 부모요소로부터 상속을 받지 못한다(자식 요소의 height에 100%를 주더라도 부모의 height를 상속받지 못한다.)
 
@@ -256,7 +259,7 @@ CSS Responsive
 CSS Slick
 	- 탭 메뉴와 함께 사용할 경우, display: none - block은 사용하지 않는 것이 좋다. visibilitye:hidden - visible을 사용하는 것이 좋다
 	- slick은 float으로 구현되어있다. 그래서 별도로 display: flex를 사용하는 것은 좋지 않다
-
+	- slick-dots의 경우 position 설정 시 별도로 기준점을 잡지 않아도 된다(슬릭 자체에 포지셔닝된 것이 있다)
 
 CSS text-overflow
 	- white-space:nowrap;과 함께 사용하여, text-overflow: ellipse를 사용하면 넘치는 텍스트는 ... 처리가 된다. 하지만 텍스트를 감싸는 요소에 width를 설정하고 overflow:hidden을 설정해주어야 한다.
