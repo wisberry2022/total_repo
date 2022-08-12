@@ -1,0 +1,23 @@
+git Tip
+
+git의 HEAD
+	- 로컬 브랜치를 가리키는 포인터
+		-> 현재 작업하는 브랜치의 마지막 커밋	
+git의 Checkout
+	- 현재 브랜치를 떠나 새로운 브랜치로 들어간다는 의미
+		-> 브랜치 이동 시 사용하는 명령어
+		ex) git checkout 브랜치이름(현재 브랜치를 벗어나 작성한 브랜치로 들어간다는 의미다)
+	- branch 뿐만이 아니라 특정 커밋이나 파일로도 체크아웃을 할 수 있다.
+
+git submodule 사용하기
+	1. 로컬 폴더와 원격 repo 연결하기
+	2. git submodule init
+		- 서브모듈 정보를 기반으로 로컬 환경설정 파일을 준비한다
+			-> .gitmodules 파일에 있는 정보를 .git/config에 등록한다
+	3. git submodule update
+		- 서브모듈의 원격 저장소에서 데이터를 가져오고 서브모듈을 포함한 
+		  프로젝트의 현재 스냅샷에서 checkout 해야 할 커밋 정보를 가져와서 
+		  서브모듈 프로젝트에 대한 checkout을 한다
+	4. git submodule foreach git checkout main(서브모듈에서 주로 사용하고 있는 branch)
+		- 각 서브프로젝트를 주로 사용하는 branch로 checkout하기 위함이다.
+			-> submodule update를 통해 받은 서브모듈은 detached HEAD 상태로 어떤 branch에도 속하지 않은 상태가 되기 때문
