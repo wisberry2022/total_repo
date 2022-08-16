@@ -9,3 +9,14 @@ JQuery Tip
 	-> jquery로 애니메이션을 줄 수 있는 코드
 	-> 스크롤을 내리고 싶다면, {style}에, { scrollTop: 숫자 }를 입력한다.
 	-> time은 애니메이션이 진행되는 시간을 의미한다
+
+ - HTML 요소에 특정 클래스가 있는지 확인하기
+	* $(<selector>).hasClass("class")
+		-> 클래스가 있다면 true를, 그렇지 않다면 false를 사용한다
+
+ - HTML 요소의 css 속성을 변경하기
+	* $(<selector>).css('css property','value')
+		-> css property의 경우 하이픈이 들어가는 경우 camel-case 형식으로 작성한다.
+			ex) background-image -> backgroundImage
+		-> 속성을 제거하고 싶은 경우, value에 빈 칸을 넣는다
+			ex) $('.test').css('overflow', '');

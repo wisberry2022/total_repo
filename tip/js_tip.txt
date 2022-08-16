@@ -54,7 +54,13 @@ js와 CSS
 	-> js로 적용한 CSS는 html 태그에서 인라인 스타일시트로 적용된다.
 		* 내부/외부 스타일시트보다 우선적으로 적용된다.
 
-
+swiper.js
+	- swiper 슬라이더의 크기를 지정하기 위해서는 하위 요소들에 크기를 주지 말고, swiper를 감싸고 있는 전체 컨테이너 박스에 height, width를 주어야 한다
+	- swiper 슬라이더의 옵션에 loop: true;를 설정할 경우 슬라이더 아이템들의 nth-child가 의미가 없어진다
+	- swiper의 dots는 pagination 설정 및 HTML 태그 추가를 통해 추가할 수 있다.
+		ex) <div class = "swiper"> <div class = "swiper-wrapper"> ... </div> <div class = "swiper-pagination"></div> </div> in HTML
+		ex) const swiper = new Swiper('.swiper', { pagination: {'.swiper-pagination',}, });
+	- swiper의 this.realIndex를 사용하여 현재 슬라이드의 인덱스를 받을 수 있다.
 
 ===============================================================================================================================
 
@@ -153,6 +159,7 @@ Vanilla JS DOM
 
 초기화
 	ex) window.onload = function() { ... }
+	ex) window.addEventListener('DOMContentLoaded', function() { ... } )
 		-> 자바스크립트는 웹 브라우저가 HTML 코드를 모두 파싱하여 DOM 트리를 모두 생성한 후에 작동하는데, 위 코드는 DOM 트리 생성 이후 자바스크립트를 실행하겠다는 초기함수이다.
 
 이벤트
@@ -183,13 +190,17 @@ Vanilla JS DOM
 			ex) LI.addEventListener('click', function); (O)
 			ex) LI.addEventListener('click', function()); (X)
 
-
-
 HTML 요소의 CSS 접근하기
 	ex) document.querySelector('name').style.<css property> = <value>
 		-> <css property>에는 하이픈과 같은 문자가 올 수 없다. 만일 CSS 속성 중 하이픈이 들어간다면 반드시 카멜케이스형식으로 작성하여야 한다
 			ex) LI.style.backgroundColor = '#f00';
 
 HTML 요소의 인덱스 찾기
-	-> HTML 요소를 for / forEach 문을 통해 접근하면 매개변수로 index를 자체적으로 받을 수 있다.
+	- HTML 요소를 for / forEach 문을 통해 접근하면 매개변수로 index를 자체적으로 받을 수 있다.
 		ex) LI.forEach(function(elm, index) { ... } );
+
+HTML 요소에 글자 넣기
+	- .innerHTML/.innerText를 사용하여 요소에 글자를 넣을 수 있다
+		-> innerText를 사용할 경우 js에서 작성한 줄바꿈이 자동으로 적용된다
+		-> .innerHTML의 경우 따옴표 사이에 HTML 태그를 삽입할 수 있다.
+			ex) document.querySelector('h1').innerHTML = 'hello <br /> my name';
