@@ -162,6 +162,10 @@ Vanilla JS DOM
 	ex) window.addEventListener('DOMContentLoaded', function() { ... } )
 		-> 자바스크립트는 웹 브라우저가 HTML 코드를 모두 파싱하여 DOM 트리를 모두 생성한 후에 작동하는데, 위 코드는 DOM 트리 생성 이후 자바스크립트를 실행하겠다는 초기함수이다.
 
+요소 선택
+	* document.querySelector('selector')
+		-> 위 API로 HTML 요소를 선택했을 때, 입력한 selector가 여러개일 경우 그 중 첫번째 요소만을 선택한다. 
+
 이벤트
 	* mouseup 이벤트
 		- 어떤 element에 click-event가 발생하면, mousedown, mouseup 이벤트도 함께 발생한다
@@ -170,8 +174,18 @@ Vanilla JS DOM
 		- 이벤트 발생 순서
 			-> mousedown - mouseup - click
 
+	* event 변수
+		- addEventListener 사용 시 콜백함수에 설정가능한 parameter
+		- event 변수를 활용하면 DOM API를 통해 선택한 HTML 요소를 찾을 수 있다.
+			-> event.target: 사용자가 실제로 클릭한 요소
+			-> event.currentTarget: 실제 이벤트가 붙은 HTML 요소
+			cf) document.querySelector('.test').addEventListener('click', function(event) { console.log(event.target); console.log(event.currentTarget); });
+				-> 위 코드에서 event.target은 사용자가 '.test' 태그의 자식에 있는 요소를 클릭했다면 그것을 반환하지만, event.currentTarget은 실제 'click' 이벤트가 부착된 '.test'를 반환한다
+
 클래스 조작하기
-	* 자바스크립트의 .classList로 HTML 요소에 클래스를 조작할 수 있다 
+	* 자바스크립트의 .classList로 HTML 요소에 클래스를 조작할 수 있다
+	* document.querySelector() 등과 같은 HTML 요소에 직접 접근할 수 있는 DOM API가 아니더라도, classList를 사용하여 요소에 부착된 클래스를 확인할 수 있다.
+		ex) event.target.classList.contains('.test') (o) 
 	- .classList.add( 클래스 이름 ) 
 		-> HTML 요소에 클래스를 붙일 수 있다
 	- .classList.remove( 클래스 이름 )
@@ -204,3 +218,6 @@ HTML 요소에 글자 넣기
 		-> innerText를 사용할 경우 js에서 작성한 줄바꿈이 자동으로 적용된다
 		-> .innerHTML의 경우 따옴표 사이에 HTML 태그를 삽입할 수 있다.
 			ex) document.querySelector('h1').innerHTML = 'hello <br /> my name';
+
+etc 
+	- 변수의 값이 ''일 경우 false로 취급되지만, 공백이 하나라도 있을 경우(' ')에는 true로 취급된다
