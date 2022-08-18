@@ -164,6 +164,10 @@ JS 기초
 		- string.split()
 			-> 문자열을 특정 기준으로 분리하여 배열로 변환해주는 내장함수
 				ex) let test = 'string' -> test.split('') -> ['s','t','r','i','n','g']
+	* number
+		- number.toString()
+			-> 숫자를 문자열로 변환해준다.
+				ex) let test = '05' -> test.toString()
 
 10. JS에서의 this
 	* this
