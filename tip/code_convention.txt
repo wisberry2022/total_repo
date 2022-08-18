@@ -3,7 +3,7 @@
 	- Semantic Tag <main> IE에선 지원하지 않는다.
 	- Semantic Tag <section> 태그에는 이름(클래스 등)을 붙여줘야 한다
 	- 웹 아이콘의 경우 font-weight를 적용하지 않는다
-	- <h1 ~ 6> 태그 내부에는 div와 같은 box 태그를 사용하지 않는 것이 일반적이다.
+	- <h1 ~ 6> 태그 내부에는 div/p와 같은 box 태그를 사용하지 않는 것이 일반적이다.
 		-> 불가피할 경우에만 사용
 	- margin은 일반적으로 아래로 주는 것이 좋다.(margin-bottom)
 	- reset css에서 body에 line-height:1을 설정해주지 않으면 줄간격이 어색해진다.
