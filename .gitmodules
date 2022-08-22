@@ -16,9 +16,6 @@
 [submodule "react_inseo"]
 	path = react_inseo
 	url = https://github.com/wisberry2022/react_inseo.git
-[submodule "tip/react_practice"]
-	path = tip/react_practice
-	url = https://github.com/wisberry2022/react_practice.git
 [submodule "react_practice"]
 	path = react_practice
 	url = https://github.com/wisberry2022/react_practice.git
