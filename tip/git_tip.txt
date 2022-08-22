@@ -9,7 +9,7 @@ git의 Checkout
 		ex) git checkout 브랜치이름(현재 브랜치를 벗어나 작성한 브랜치로 들어간다는 의미다)
 	- branch 뿐만이 아니라 특정 커밋이나 파일로도 체크아웃을 할 수 있다.
 
-git submodule 사용하기
+git submodule 포함된 리포지토리 연결하기
 	1. 로컬 폴더와 원격 repo 연결하기
 	2. git submodule init
 		- 서브모듈 정보를 기반으로 로컬 환경설정 파일을 준비한다
@@ -21,3 +21,11 @@ git submodule 사용하기
 	4. git submodule foreach git checkout main(서브모듈에서 주로 사용하고 있는 branch)
 		- 각 서브프로젝트를 주로 사용하는 branch로 checkout하기 위함이다.
 			-> submodule update를 통해 받은 서브모듈은 detached HEAD 상태로 어떤 branch에도 속하지 않은 상태가 되기 때문
+
+git submodule 삭제하기
+	- submodule이 포함된 폴더에 들어가 아래 명령어를 입력한다.
+		-> git rm -f my_submodule
+			* 위 명령어를 통해 .gitconfig에도 submodule path가 삭제되며, 실제 폴더에서도 submodule 폴더가 사라진다
+
+
+

@@ -11,7 +11,6 @@ html파일에서 js 불러오기
 arrow function
 	-> arrow function에서는 함수 형태 특성 상 this 사용이 불가능하다.
 		
-
 fullpage
 	-> fullpage에서는 anchors를 활용하여 각 페이지를 해시(#p01, #p02)를 통해 연결할 수 있다.(<a> 태그 활용)
 
@@ -195,6 +194,11 @@ Vanilla JS DOM
 요소 선택
 	* document.querySelector('selector')
 		-> 위 API로 HTML 요소를 선택했을 때, 입력한 selector가 여러개일 경우 그 중 첫번째 요소만을 선택한다. 
+		-> 요소가 여러개일 경우 HTMLCollection 타입으로 가져오게 되는데, 유사배열이기 때문에 forEach, map, filter와 같은 것들이 작동되지 않는다.
+			* HTMLCollection의 prototype에 접근하여 forEach를 사용할 수 있도록 조작할 수 있다.
+				ex) HTMLCollection.prototype.forEach = Array.prototype.forEach;
+	* document.querySelector('selector').children
+		-> 해당 요소가 포함한 자식 요소들을 모두 가지고 온다. HTMLCollection(유사배열) 형태를 반환한다.
 
 이벤트
 	* mouseup 이벤트
