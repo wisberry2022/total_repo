@@ -69,9 +69,11 @@ HTML in React
 			  </p>
 	                }
 		* function Home()의 경우 render 함수 아래 / 내부(내부일 경우 return 이전에 작성하여야 한다)에 작성하여도 정상적으로 작동한다
+
 prop
 	-> 특정 컴포넌트에서 선언한 데이터를 다른 컴포넌트로 전달해줄 수 있다.
 		ex) 컴포넌트 내에서 <Main key=value /> 와 같은 형태로 전달할 수 있다
+	-> 전달받은 props는 object의 형태로 전달된다(key와 value를 가진다)
 	-> props를 전달받을 컴포넌트에서는 함수 매개변수로 작성해주면 된다.
 		ex) const Test = (props) = { return ( ... ) }
 		* 매개변수를 삽입하는 부분에 비구조 할당을 바로 사용할 수 있다.
@@ -87,6 +89,11 @@ prop
 		ex) const Wrapper = (props) => { return ( <> {props.children} </> ) } in Wrapper.js
 	-> 태그 안에 들어간 prop 요소들은 모두 {}를 사용해야 한다.
 		ex) function Header(props) { return ( <header> ... {props.member.map(el => <li>{el.name}</li>)} </header> ) }
+	-> props를 통해 숫자 value를 전달하고 싶다면 {}를 사용하여야 한다
+		ex) <Test list = 'name' age = {29} />
+	-> props를 받아올 때 매개변수 작성 시 비구조 할당을 시도할 수 있다.
+		ex) const Test = (props) => { ... } -> const Test = ({list, age, name}) => {...}
+	-> 함수도 prop을 통해 전달할 수 있다 App.js에서 useState로 선언한 변수를 제어하는 함수를 설정하고, 이를 다른 컴포넌트 파일로 props를 통해 전달한 뒤 해당 함수를 이벤트로 등록하면 App.js에 설정된 변수가 변경된다
 
 State
 	-> useState 사용 전 import { useState } from "react"; 를 작성해야 한다
@@ -140,4 +147,13 @@ event in React
 		        )
 	 }>Click</button>
 
-	-> 태그 내에 이벤트 함수를 작성할 때에는 일반 JS에서 사용하던 것과는 다르다. 함수
+	-> 태그 내에 이벤트 함수를 작성할 때에는 일반 JS에서 사용하던 것과는 다르다. 
+
+css in React
+	- 일반적으로 css를 적용하는 것처럼 사용할 수 있지만 js 내에서 객체로 만들어 전달할 수도 있다
+		ex) const css = {fontSize: '100px', color: '#f00'} -> <div style={css}></div>
+	- css를 모듈파일로 만들어 임포트하여 적용시킬 수도 있다
+		ex) <name>.module.css => 이때, .module은 반드시 작성해야한다
+	- 임포트한 css 파일은 컴포넌트내에서 사용할 수 있는데, 이 때 스타일은 객체처럼 작동하기 때문에 아래와 같이 적용시킬 수 있다
+		ex) import styles from './TopBanner.module.css';
+		     <div className = {style.test}></div>
