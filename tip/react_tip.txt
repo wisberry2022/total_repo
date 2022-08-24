@@ -157,3 +157,19 @@ css in React
 	- 임포트한 css 파일은 컴포넌트내에서 사용할 수 있는데, 이 때 스타일은 객체처럼 작동하기 때문에 아래와 같이 적용시킬 수 있다
 		ex) import styles from './TopBanner.module.css';
 		     <div className = {style.test}></div>
+
+map in React
+	- React에서 map을 사용하여 반복적인 HTML 요소를 생성할 때에는 반복되는 HTML 요소마다 서로 다른 값을 가진 key값을 부여해주어야 한다
+		const List = () => {
+  			return (
+			    <ul>
+			       {
+				DATA.map(
+				  (it) =>
+				            <li key={it.id}> => 이 때, map 함수의 callback function의 인자로 들어오는 idx를 사용하는 것은 권장하지 않는다
+				              {it.name}은 {it.age}살 {it.sleep ? '수면 중' : '놀고있음'}
+				            </li>)
+				}
+			    </ul>
+			  )
+		}
