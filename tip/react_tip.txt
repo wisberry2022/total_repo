@@ -148,6 +148,8 @@ event in React
 	 }>Click</button>
 
 	-> 태그 내에 이벤트 함수를 작성할 때에는 일반 JS에서 사용하던 것과는 다르다. 
+		* ( ) => {} 로 사용하던 것을 ( ) => ( ) 로 사용하여야 한다.
+		* ( ) => { console.log('a'); console.log('b') } 로 사용하던 것은 ( ) => { console.log('a'), console.log('b') }로 사용할 수 있다
 
 css in React
 	- 일반적으로 css를 적용하는 것처럼 사용할 수 있지만 js 내에서 객체로 만들어 전달할 수도 있다
