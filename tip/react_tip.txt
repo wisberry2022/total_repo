@@ -95,7 +95,10 @@ prop
 		ex) const Test = (props) => { ... } -> const Test = ({list, age, name}) => {...}
 	-> 함수도 prop을 통해 전달할 수 있다 App.js에서 useState로 선언한 변수를 제어하는 함수를 설정하고, 이를 다른 컴포넌트 파일로 props를 통해 전달한 뒤 해당 함수를 이벤트로 등록하면 App.js에 설정된 변수가 변경된다
 
-State
+hook
+	-> hook을 사용하기 위해서는 render 함수 내부에 작성하여야 한다
+
+useState
 	-> useState 사용 전 import { useState } from "react"; 를 작성해야 한다
 	-> React 내에서 선언하는 변수
 		* 페이지 내에서 특정 이벤트에 의해 변동사항이 생기는 데이터를 다룰 때 사용한다.
@@ -113,6 +116,10 @@ useRef
 		ex) const link = useRef(); ... <div ref = {link}>TEST</div>
 	-> link 변수에는 div 태그가 담기게 된다. 만약 link.current를 사용하면 참조 된 태그와 태그의 컨텐츠까지 함께 확인할 수 있다.
 		
+useEffect
+	-> react의 컴포넌트가 한번 렌더링 -> 업데이트 과정을 거칠 때 딱 한 번 실행하게 하는 Hook
+		ex) useEffect(() => { ... }, [ ])
+			* 두번째 인자인 빈 배열은 의존성 배열로, 컴포넌트 실행 시 딱 한 번만 실행하게 되라는 의미이다. 생략할 시 문제가 생긴다
 
 Route
 	-> 컴포넌트로 생성한 페이지들을 링크로 연결해주는 모듈
