@@ -201,9 +201,9 @@ Vanilla JS DOM
 		-> 자바스크립트는 웹 브라우저가 HTML 코드를 모두 파싱하여 DOM 트리를 모두 생성한 후에 작동하는데, 위 코드는 DOM 트리 생성 이후 자바스크립트를 실행하겠다는 초기함수이다.
 
 요소 선택
-	* document.querySelector('selector')
-		-> 위 API로 HTML 요소를 선택했을 때, 입력한 selector가 여러개일 경우 그 중 첫번째 요소만을 선택한다. 
-		-> 요소가 여러개일 경우 HTMLCollection 타입으로 가져오게 되는데, 유사배열이기 때문에 forEach, map, filter와 같은 것들이 작동되지 않는다.
+	* document.querySelector('selector') / document.querySelectorAll('selector')
+		-> 위 API로 HTML 요소를 선택했을 때, 입력한 selector가 여러개일 경우 그 중 첫번째 요소만을 선택한다. (querySelector)
+		-> querySelectorAll은, 요소가 여러개일 경우 HTMLCollection 타입으로 가져오게 되는데, 유사배열이기 때문에 forEach, map, filter와 같은 것들이 작동되지 않는다.
 			* HTMLCollection의 prototype에 접근하여 forEach를 사용할 수 있도록 조작할 수 있다.
 				ex) HTMLCollection.prototype.forEach = Array.prototype.forEach;
 	* document.querySelector('selector').children
@@ -263,6 +263,58 @@ HTML 요소에 글자 넣기
 		-> innerText를 사용할 경우 js에서 작성한 줄바꿈이 자동으로 적용된다
 		-> .innerHTML의 경우 따옴표 사이에 HTML 태그를 삽입할 수 있다.
 			ex) document.querySelector('h1').innerHTML = 'hello <br /> my name';
+
+HTML 요소 값 가져오기
+	- <input> 태그에 입력한 값을 가져오기 위해서 .value를 이용한다.
+		ex) document.queryElementsByTagName('input').value;
+
+HTMLCollection
+	- 문서 내에 순서대로 정렬된 노드의 컬렉션 ㅡ 유사배열(배열이 아니다)
+		-> 일반적인 배열의 메소드를 사용할 수 없다
+	- HTMLCollection 객체로 받은 요소에 바로 addEventListener와 같은 메소드를 사용할 수 없기 때문에 비구조할당이나, spread 연산자를 통해 배열 메소드를 이용해 접근할 수 있도록 배열로 만들어 주어야 한다
+		ex) const [BTN] = document.getElementsByTagName('button');
+		    const [...elems] = document.querySelectorAll('.test');
+
+HTML 요소 생성/수정 및 삭제
+	- document.createElement(<Tag>)
+		-> 위 코드를 통해 JS에서 새로운 HTML 태그를 생성할 수 있다
+		-> 위 코드를 통해 생성된 HTML 태그는 텍스트를 넣어준다거나 스타일을 변경하고 속성을 수정할 수 있다
+			-> 위 코드를 통해 생성된 HTML 태그는 DOM API(document.querySelector(<selector>)로 선택한 태그들과 마찬가지로 동일한 기능들을 사용할 수 있다
+				ex) classList 사용 등등..
+	- Tag.textContent = '...';
+		-> 새롭게 생성한 태그에 텍스트를 삽입할 수 있다. .textContent라는 변수에 접근하여 값을 넣어주면 된다
+	- Tag.appendChild(tag)
+		-> 특정 요소의 자식에 새로운 태그를 삽입할 수 있다.
+	- Tag.removeChild(tag)
+		-> 특정 요소의 자식 중 가장 마지막 자식요소를 삭제한다.
+
+HTML LocalStorage
+	* window.localStorage
+
+	- 웹 브라우저에 key-value 형태를 통해 데이터를 임시로 저장할 수 있다. 저장한 데이터는 세션 간에 공유된다
+		-> 서로 다른 탭에서 생성된 데이터가 공유된다는 의미
+	- 로컬 스토리지는 문자열만 저장할 수 있는데, 객체 및 배열 저장을 위해서는 객체를 문자열로 변환해서 저장해야한다	
+	- 브라우저 창이 닫힌 후에도 유지되는 만료 날짜가 없는 데이터이다.
+	
+	* localStorage.setItem('key','value')
+		- 로컬스토리지에 key와 value를 직접 넣을 수 있는 메소드
+			-> 이 때, value에 HTML요소를 넣을 때에는 DOMAPI로 접근한 요소를 곧바로 넣어선 안되고, .outerHTML 메소드를 작성하여야 한다
+				ex) localStorage.setItem(idx, itm.outerHTML)
+					-> 이를 지키지 않을 경우, HTMLDivElement라는 요소가 로컬스토리지에 저장된다.
+	* localStorage.getItem('key')
+		- 로컬스토리지의 아이템을 읽기 위해서 사용하는 함수이다 매개변수로 key를 넣으면 key에 해당하는 value가 출력된다.
+
+'DOMContentLoaded' vs 'onload'
+	* DOMContentLoaded
+		- DOMContentLoaded는 HTML과 script가 로드된 시점에 발생하는 이벤트이다.
+		- onload 이벤트보다 먼저 발생한다. 빠른 실행속도가 필요할 때 적합하다
+		- document의 모든 자원이 다운로드 되었을 때 발생하는 onload와 달리 DOM 트리만 완성되면 바로 발생하므로 빠른 실행속도가 필요할 때 적합하다.
+		- 여러번 사용되면 선언 순서에 따라 순차적으로 실행된다
+	* onload
+		- 문서의 모든 컨텐츠(images, script, css, etc)가 로드된 후 발생하는 이벤트이다 (load 이벤트라고도 불린다)
+		- 문서에 포함된 모든 컨텐츠가 로드된 후에 실행되기에 불필요한 로딩시간이 추가될 수 있다
+		- 동일한 문서에 오직 하나만 존재해야 하는데, 중복될 경우, 마지막 선언이 실행된다
+	
 
 etc 
 	- 변수의 값이 ''일 경우 false로 취급되지만, 공백이 하나라도 있을 경우(' ')에는 true로 취급된다
