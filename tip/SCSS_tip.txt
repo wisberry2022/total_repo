@@ -1,0 +1,33 @@
+SCSS
+
+* 선택자
+	- 자식 선택자
+		-> 특정 부모 요소의 바로 아래 자식 요소를 선택하는 경우 '>'를 사용한다
+		 	ex) .container { 
+			       >ul {
+				...
+		    	       }
+
+	- 상위 요소 선택자
+		-> 상위 요소를 선택하고 싶다면 &를 사용할 수 있다.
+			ex) .container {
+				div {
+					&::after {
+						...
+					}
+				}
+			    }
+
+* 변수
+	- $<name>: <value>와 같은 형식으로 변수를 선언하여 재사용 할 수 있다
+	- #{ }
+		-> JS의 템플릿 리터럴과 같은 역할을 한다. SCSS 코드의 어디든지 변수값을 넣을 수 있다
+
+* 반복문
+	- for $i from <start_num> through <destine_num> {
+		.through:nth-child(#{$i}) {
+			width: 30px;
+		}
+	  }
+		-> from a through n : a부터 b까지 반복 (b포함)
+		-> from a to b : a부터 b 직전까지 반복
