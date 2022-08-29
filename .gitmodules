@@ -19,3 +19,6 @@
 [submodule "react_practice"]
 	path = react_practice
 	url = https://github.com/wisberry2022/react_practice.git
+[submodule "hyundai_page"]
+	path = hyundai_page
+	url = https://github.com/wisberry2022/hyundai_page.git
