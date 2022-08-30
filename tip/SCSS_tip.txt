@@ -31,3 +31,18 @@ SCSS
 	  }
 		-> from a through n : a부터 b까지 반복 (b포함)
 		-> from a to b : a부터 b 직전까지 반복
+
+* CSS문 재사용
+	- @mixin
+		-> CSS 코드 일부를 저장해두어 향후 저장한 CSS를 적용시킬 수 있는 기능
+			ex) @mixin test { 
+				.figure {  
+					width: 100%;
+					...
+				}
+			      }
+
+		-> 저장한 mixin을 불러들여올때에는 @include를 사용한다
+			ex) .Wrapper:hover {
+				@include test;
+			     }
