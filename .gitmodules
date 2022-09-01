@@ -22,3 +22,6 @@
 [submodule "hyundai_page"]
 	path = hyundai_page
 	url = https://github.com/wisberry2022/hyundai_page.git
+[submodule "hd_javascript"]
+	path = hd_javascript
+	url = https://github.com/wisberry2022/hd_javascript.git
