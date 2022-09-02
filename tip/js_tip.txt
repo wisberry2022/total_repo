@@ -298,6 +298,10 @@ HTML 요소 생성/수정 및 삭제
 	- Tag.removeChild(tag)
 		-> 특정 요소의 자식 중 가장 마지막 자식요소를 삭제한다.
 
+HTML 화면 사이즈 구하기
+	- window.outerWidth
+		-> 브라우저의 width 값을 계산한다
+
 HTML LocalStorage
 	* window.localStorage
 
