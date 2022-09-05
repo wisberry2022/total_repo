@@ -16,6 +16,11 @@ package.json
 src/.git ignore
 	-> react 폴더/파일 중 git에 올리지 않을 파일들을 추가/삭제 할 수 있다
 
+Scss in React
+	-> node-sass는 nodejs 버전에 영향을 받는다 따라서 node-sass 보다는 sass 패키지 사용이 권장된다
+		-> sass는 node-sass를 흡수한 최신 버전의 패키지이다.
+		ex) npm i -D sass 로 설치하면 scss 적용이 된다.
+
 경로
 	-> react 컴포넌트에서 이미지를 임포트할 때, 실제 서로간의 폴더의 레벨이 달라도 그것을 신경쓰지 않고 임포트해줄 수 있다.
 		ex) <img src = "./img/ddd.png"> in ./doc/test.js -> 실제 img 폴더가 /doc 폴더보다 상위 디렉토리에 있다하더라도 ./img로 바로 작성해주면 된다.
@@ -36,6 +41,15 @@ HTML in React
 <img> tag
 	- 이미지 태그 및 input 태그와 같이 별도의 클로징 태그가 없는 경우, 끝부분에 '/'를 반드시 작성한다
 		ex) <img src = "..." alt = "..."> (x) => 컴파일 오류 발생 / <img src = "..." alt = "..." /> (o)
+
+
+=========================================================================================
+
+CSS in React
+
+background-image 넣기
+	- public에 넣은 파일은 background-image로 불러 올 수 없다. src 폴더에 이미지를 넣어야 한다.
+
 
 =========================================================================================
 컴포넌트(src/App.js)
@@ -133,7 +147,10 @@ Route
 			<Routes>
 	-> Route 컴포넌트를 통해 사용자 임의 url을 설정하여 특정 컴포넌트(페이지)로 이동할 수 있도록 설정할 수 있다.
 		ex) <Route path = '/'(사용자 임의 url) element = {<Section 01 />}(임포트한 컴포넌트) />
-	-> Link를 통해 HTML의 <a>태그와 같은 기능을 부여할 수 있다. Link를 사용하여야 React를 활용한 본격적인 SPA가 되는것이다
+	-> Route 컴포넌트 내부의 element는 component로도 사용할 수 있다.
+	-> 만약 '/About'과 같은 다른 Route를 설정할 경우, 실제 페이지의 루트 페이지로 이동하더라도 /About페이지까지 모두 렌더링 된 것을 확인할 수 있다. 
+		-> 이는 '/About'을 렌더링 할 때, '/'과 '/About'을 모두 렌더링 해버리기 때문에, path 뒤에 exact = {true}라는 props를 넣어야 한다
+	-> 컴포넌트(App.js가 아닌)에서 Link를 통해 HTML의 <a>태그와 같은 기능을 부여할 수 있다. Link를 사용하여야 React를 활용한 본격적인 SPA가 되는것이다
 		ex) import { Outlet, Link } from "react-router-dom";
 	-> <Link></Link>와 같은 형태로 사용할 수 있다.
 		ex) <Link to = "/section01">text</Link>

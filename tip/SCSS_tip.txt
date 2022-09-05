@@ -46,3 +46,8 @@ SCSS
 			ex) .Wrapper:hover {
 				@include test;
 			     }
+
+* 논리연산자
+	- and: 논리곱 
+	- or: 논리합
+	- not: 부정
