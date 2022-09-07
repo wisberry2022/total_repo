@@ -52,6 +52,8 @@ HTML <table> Tag
 		* 이를 해결하기 위해 <table> 태그의 css에 border-spacing을 설정해준다.
 	- 테이블 셀 사이의 공간을 없에주고 싶다면 border-spacing과 border-collapse를 사용한다
 		ex) border-spacing: 0; border-collapse: collapse;
+	- <table> 태그는 margin은 적용되지만 padding은 적용되지 않는다
+		-> td에 padding을 주는 것이 적절하다.
 
 HTML <hr> Tag
 	- <hr> 태그의 기본 설정은 overflow: hidden이다
