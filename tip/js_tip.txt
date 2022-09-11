@@ -124,6 +124,7 @@ JS 기초
 				ex) const test = parameter => console.log(parameter)
 		* arrow function에서는 this를 사용할 수 없다
 			* event를 변수로 받아 event.target을 사용해주어야 한다
+		* 구문이 여러개일 경우, 반드시 중괄호 안에 코드를 작성하여야 한다. 그리고 반드시 return 문을 작성하여야 한다
 
 
 6. Event
