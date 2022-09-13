@@ -25,3 +25,6 @@
 [submodule "hd_javascript"]
 	path = hd_javascript
 	url = https://github.com/wisberry2022/hd_javascript.git
+[submodule "hyundai_react"]
+	path = hyundai_react
+	url = https://github.com/wisberry2022/hd_react.git
