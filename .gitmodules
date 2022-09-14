@@ -28,3 +28,6 @@
 [submodule "hyundai_react"]
 	path = hyundai_react
 	url = https://github.com/wisberry2022/hd_react.git
+[submodule "jungto"]
+	path = jungto
+	url = https://github.com/wisberry2022/jungto.git

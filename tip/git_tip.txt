@@ -35,4 +35,8 @@ git submodule 삭제하기
 			* 위 명령어를 통해 .gitconfig에도 submodule path가 삭제되며, 실제 폴더에서도 submodule 폴더가 사라진다
 
 
-
+git restore
+	- 워킹 디렉토리에서 이미 commit이 되어 있는 파일을 수정하는 경우, git status를 입력하면 Changes not staged for commit이 출력되고,
+	  새로 생성한 파일은 Untracked files 항목에 표시된다(한 번도 commit에 올라간 적 없으니 git이 추적하지 못한다.)
+	- Git에 이미 올라가 있고, modified 된 파일의 수정사항을 되돌리기 위해서는 restore 명령어를 사용하면, modified 전의 내용으로 되돌릴 수 있다
+		ex_ git restore <파일명>
