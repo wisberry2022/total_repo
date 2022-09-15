@@ -97,3 +97,28 @@ const App = () => {
 
 ```
 
+예상대로라면, num+1과 num+2가 순차적으로 실행될테니 button을 클릭하면 3이 나올 것이라고 생각할 것이다. 하지만 그렇지 않다. 동일한 state를 연속적으로 업데이트할 경우, 변경 사항을 모아서 한 번에 일괄 처리(Batch)하게 된다. 전달된 setter 함수를 하나로 병합한 후 최종적으로 한 번의 setter 함수만 실행하게 되어 결국 마지막 명령만 수행하게 된다..
+
+이는 리액트가 일괄적인 batch update를 통해 컴포넌트의 렌더링 횟수를 최소화하여 불필요한 렌더링을 방지하고 더 빠른 속도로 동작하게끔 설계된 것이다. 
+
+만일 numHandler 함수에서 num+1과 num+2를 모두 실행시키고 싶다면, 아래와 같이 작성하여야 한다
+
+```javascript
+const App = () => {
+	const [num, setNum] = useState(0);
+
+	return (
+		<>
+			const numHandler = () => {
+				setNum(num => num+1);
+				setNum(num => num+2);
+			}
+			<button onClick = {() => (numHandler())}>Click</button>
+			<strong>{num}</strong>
+		</>
+	)
+}
+```
+
+리액트의 useState는, 상태가 업데이트 되기 이전 값을 저장해두는데, 이를 불러와 활용하면 useState의 비동기로 인한 문제를 해소할 수 있다. 위와 같은 처리를 함수형 업데이트라고 한다.
+위와 같은 형태를 통해 num 상태를 변경하는 두 함수들이 순차적으로 큐에 저장되어 동기적으로(순차적으로) 실행되는 것이다.
