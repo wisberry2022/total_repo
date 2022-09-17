@@ -70,6 +70,8 @@ const Test01 = ({ state, stateFunc }) => {
 
 `bool`  state의 경우, `stateHandler` 함수의 파라미터로 들어오지 않았음에도 함수 내부의 삼항연산자가 정상적으로 동작한다. 이는 useState로 선언된 state 변수는 컴포넌트 내에서 전역적으로 적용된다는 의미이다.
 
+하지만 `Test01` 컴포넌트 외부에서는 state 변수를 감지하지 못하니 주의해야 한다.
+
 
 ## useState는 비동기적이다
 
