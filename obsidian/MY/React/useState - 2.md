@@ -109,3 +109,38 @@ const App = () => {
 ```
 
 `deleteHandler`  함수에서는 `arr` state에 filter를 사용하여 배열의 마지막 인덱스 이전까지의 값만 보존하도록 하였다. 이렇게 하면 배열의 마지막 값을 제거할 수 있다. `filter`  메소드는 배열을 순회하면서 각 원소에 콜백함수로 이루어진 테스트를 진행한다. 테스트의 결과가 `true`인 경우 원소 보존, `false`인 경우 배열에서 제거하여 테스트를 통과한 원소들로 이루어진 배열을 반환한다. `filter` 함수를 활용하면 useState로 선언한 배열을 삭제할 수 있다.
+
+
+## 하위 컴포넌트에서 상위 state 변경하기
+
+
+상위 컴포넌트에서 선언한 state는, setter 함수를 하위 컴포넌트로 전달할 수 있다. 하위 컴포넌트로 전달된 setter 함수는 실행 시 상위 컴포넌트에 존재하는 state도 변경된다.
+
+``` javascript
+
+const Child = ({setNum}) => {
+	return (
+		<>
+			<div onClick = {setNum(1)}>
+				hello
+			</div>
+		</>
+	)
+}
+
+const Parent = () => {
+	const [num, setNum] = useState(0);
+	return (
+		<>
+			<Child setNum = {setNum} />		
+			{console.log(num)}
+		</>
+	)
+	
+
+	
+}
+
+```
+
+Child에서 전발 받은 `setNum`  함수를 통해 state를 변경하면, Parent 컴포넌트의 `num`이 변경된다.
