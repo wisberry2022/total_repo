@@ -16,3 +16,11 @@ const App = () => {
 
 ```
 
+
+React에서 Event를 작성할 때 주의해야 할 점이 몇 가지가 있다. 그 사항은 아래와 같다.
+
+- React의 Event는 DOM 요소에만 붙일 수 있다. 리액트 컴포넌트에는 이벤트를 추가할 수 없다.
+- camelCase를 활용하여 이벤트를 작성한다  *onclick => onClick*
+- 
+
+
