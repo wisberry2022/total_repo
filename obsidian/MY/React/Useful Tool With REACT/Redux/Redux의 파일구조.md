@@ -111,3 +111,143 @@ const Root = () => {
 export default Root
 ```
 
+
+## 정리
+
+Redux를 제대로 활용하기 위해서는 Action과 Reducer에 대한 이해와 그리고 이것들을 작성하여 모듈화하여 하나로 합치는 과정, 이후 store로 불러들여 다른 컴포넌트에서 store의 state를 가지고 와 dispatch로 state를 변경하는 법에 대한 이해가 있어야 한다.
+
+### Action과 Reducer 작성
+
+state 변경을 위한 명세인 Action과, state를 직접 변경하는 함수인 Reducer는 기능별로 묶어 하나의 모듈로 생성한다. 만약 숫자를 증가하고 감소하는 컴포넌트를 계획했다면, 해당 컴포넌트에서 사용하는 state를 관리할 Action,Reducer 함수를 `counter.js`라는 모듈에 정리한다. 컴포넌트 개수가 늘어나고, 관리해야 하는 state가 늘어난다면 `counter.js` 외에도 각 컴포넌트에 해당하는 Action과 Reducer를 포함하는 모듈들은 만들고, 이후 여러개로 분할된 Reducer 모듈들을 하나로 합쳐 `RootReducer`로 `export`해야한다.
+
+## Store 생성
+
+이렇게 생성된 `RootReducer`, 혹은 단일 `Reducer`는 `store` API를 통해 어느 컴포넌트에서든지 state를 불러 올 수 있는 store로 변환된다. 그리고 `react-redux`에서 지원하는 `Provider` API를 통해 store를 사용할 컴포넌트에 props로 전달해줄 수 있다.
+
+``` javascript
+
+//App.js
+import Counter from './components/Counter';
+import Reducer from './store/modules/counterReducer';
+import { legacy_createStore as createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+const store = createStore(Reducer);
+
+function App() {
+	return (
+		<div className = "App">
+			<Provider store = {store}>
+				<Counter />
+			<Provider />
+		</div>
+	
+	)
+}
+
+```
+
+`Counter` 컴포넌트에 포함된 하위 컴포넌트에서는 자유롭게 store를 불러올 수 있다. 
+
+## State 불러오기 / 변경
+
+state를 불러오기 위해서는 Redux에서 제공하는 전용 Hook을 사용해야 한다. 전용 Hook을 통해 개발자가 작성한 Reducer들 중 원하는 Reducer를 선택하여 state를 끌고 올 수 있으며, dispatch를 통해 Action을 전달하여 state 변경을 시도할 수 있다.
+
+Reducer 모듈의 state를 가져올 수 있는 Hook은 `useSelector`, Dispatch를 할 수 있는 Hook은 `useDispatch`이다.
+
+### useSelector
+
+```javascript
+
+// Counter.js
+import {useSelector} from 'react-redux';
+
+const Counter = () => {
+	return (
+		const number = useSelector(state => state)
+	)
+	
+}
+```
+
+useSelector의 인자인 `state`는 store.getState()가 반환하는 값과 동일하다. 만약, 사용자가 여러 개의 Reducer를 작성했다면, state 뒤에 사용자가 작성한 Reducer의 모듈이름을 적어주면 해당 Reducer에서 선언한 state를 불러올 수 있다.
+
+### useDispatch
+
+```javascript
+
+//Counter.js
+import {useDispatch} from 'react-redux';
+import {numberUp, numberDown} from '../store/modules/counterReducer';
+
+const Counter = () => {
+
+	const dispatch = useDispatch();
+
+	const increase = () => dispatch(numberUp());
+	const decrease = () => dispatch(numberDown());
+	
+	return (
+		<>
+			...
+		</>
+	)
+}
+```
+
+useDispatch를 dispatch라는 변수에 담아서 사용한다. 그리고 reducer 모듈에서 가지고 온 액션 생성 함수들을, dispatch를 통해 별도의 함수를 생성한다. 
+
+## State 전달
+
+만일, 프레젠테셔널 컴포넌트와 컨테이너 컴포넌트를 분리하여 프로젝트를 설계했다면, 컨테이너 컴포넌트에서 프레젠테셔널 컴포넌트를 불러와 Redux를 통해 불러온 state와 dispatch 함수들을 프레젠테셔널 컴포넌트로 전달해야 한다.
+
+아래 코드는 컨테이너 컴포넌트인 Counter.js와 프레젠테셔널 컴포넌트인 CounterPage.js의 코드이다.
+
+```javascript
+
+// Counter.js
+import CounterPage from '../pages/CounterPage';
+import { useSelector, useDispatch } from 'react-redux';
+import { numberUp, numberDown } from '../store/modules/counterReducer';
+
+const Counter = () => {
+
+  const number = useSelector(state => state);
+  
+  const dispatch = useDispatch();
+  
+  const increase = () => dispatch(numberUp());
+  const decrease = () => dispatch(numberDown());
+
+  return (
+    <>
+      {console.log(number)}
+      <CounterPage
+        state={number}
+        numberUp={increase}
+        numberDown={decrease}
+      />
+    </>
+  )
+}
+
+export default Counter;
+```
+
+```javascript
+
+// CounterPage.js
+const CounterPage = ({ state, numberUp, numberDown }) => {
+
+  return (
+    <div className="btnBox">
+      <button onClick={numberUp}>UP</button>
+      <button onClick={numberDown}>DOWN</button>
+      <h1>{state}</h1>
+    </div>
+  )
+}
+
+export default CounterPage;
+
+```
