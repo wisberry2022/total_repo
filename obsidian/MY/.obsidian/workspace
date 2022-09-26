@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
+            "file": "JS/Promise.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
+                "file": "JS/Promise.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
+                "file": "JS/Promise.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Useful Tool With REACT/Redux/Redux의 파일구조.md"
+                "file": "JS/Promise.md"
               }
             }
           }
@@ -130,6 +130,8 @@
   },
   "active": "772ada30128c8732",
   "lastOpenFiles": [
+    "Heroku/Heroku Tutorial.md",
+    "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
     "React/Useful Tool With REACT/Redux/Redux.md",
     "React/Useful Tool With REACT/concurrently.md",
     "React/Useful Tool With REACT/nodemon.md",
@@ -137,8 +139,6 @@
     "React/useState - 2.md",
     "React/Prop.md",
     "Markdown Tutorial.md",
-    "React/useState.md",
-    "Axios/Axios Tutorial.md",
-    "JS/API 호출.md"
+    "React/useState.md"
   ]
 }
