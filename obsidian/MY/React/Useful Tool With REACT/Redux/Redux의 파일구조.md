@@ -170,7 +170,7 @@ const Counter = () => {
 }
 ```
 
-useSelector의 인자인 `state`는 store.getState()가 반환하는 값과 동일하다. 만약, 사용자가 여러 개의 Reducer를 작성했다면, state 뒤에 사용자가 작성한 Reducer의 모듈이름을 적어주면 해당 Reducer에서 선언한 state를 불러올 수 있다.
+useSelector의 인자인 `state`는 store.getState()가 반환하는 값과 동일하다. 만약, 사용자가 여러 개의 Reducer를 작성했다면, state 뒤에 사용자가 작성한 Reducer 모듈의 Reducer 함수 이름을 적어주면 해당 Reducer에서 선언한 state를 불러올 수 있다.
 
 ### useDispatch
 
