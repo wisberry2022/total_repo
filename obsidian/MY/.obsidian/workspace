@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
+            "file": "React/Reducer & useReducer.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
+                "file": "React/Reducer & useReducer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
+                "file": "React/Reducer & useReducer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Useful Tool With REACT/Redux/Redux의 파일구조.md"
+                "file": "React/Reducer & useReducer.md"
               }
             }
           }
@@ -130,8 +130,8 @@
   },
   "active": "772ada30128c8732",
   "lastOpenFiles": [
-    "React/Useful Tool With REACT/Redux/Redux.md",
     "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
+    "React/Useful Tool With REACT/Redux/Redux.md",
     "JS/Promise.md",
     "Heroku/Heroku Tutorial.md",
     "React/Useful Tool With REACT/concurrently.md",
