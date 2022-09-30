@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "React/Reducer & useReducer.md",
+            "file": "JS/import & export.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Reducer & useReducer.md",
+                "file": "JS/import & export.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Reducer & useReducer.md",
+                "file": "JS/import & export.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Reducer & useReducer.md"
+                "file": "JS/import & export.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "772ada30128c8732",
   "lastOpenFiles": [
+    "React/useEffect.md",
+    "React/Reducer & useReducer.md",
     "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
     "React/Useful Tool With REACT/Redux/Redux.md",
     "JS/Promise.md",
     "Heroku/Heroku Tutorial.md",
     "React/Useful Tool With REACT/concurrently.md",
     "React/Useful Tool With REACT/nodemon.md",
-    "React/Reducer & useReducer.md",
     "React/useState - 2.md",
-    "React/Prop.md",
-    "Markdown Tutorial.md"
+    "React/Prop.md"
   ]
 }
