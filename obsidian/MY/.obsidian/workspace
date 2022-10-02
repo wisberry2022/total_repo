@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "JS/import & export.md",
+            "file": "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JS/import & export.md",
+                "file": "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JS/import & export.md",
+                "file": "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JS/import & export.md"
+                "file": "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "772ada30128c8732",
   "lastOpenFiles": [
+    "React/Useful Tool With REACT/Redux-Toolkit/Redux-Toolkit Tutorial.md",
+    "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
+    "JS/import & export.md",
     "React/useEffect.md",
     "React/Reducer & useReducer.md",
     "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
     "React/Useful Tool With REACT/Redux/Redux.md",
     "JS/Promise.md",
     "Heroku/Heroku Tutorial.md",
-    "React/Useful Tool With REACT/concurrently.md",
-    "React/Useful Tool With REACT/nodemon.md",
-    "React/useState - 2.md",
-    "React/Prop.md"
+    "React/Useful Tool With REACT/concurrently.md"
   ]
 }
