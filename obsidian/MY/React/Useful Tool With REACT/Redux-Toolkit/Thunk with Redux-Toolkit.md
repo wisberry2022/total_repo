@@ -1,4 +1,4 @@
-# 1. Thunk with Redux-Toolkit
+# Thunk with Redux-Toolkit
 
 
 Redux에서 작성하는 리듀서 함수는 반드시 순수함수여야 한다. 이것은 React-Redux를 쓰든, Redux-Toolkit을 쓰든 모두 동일한 규칙이다. 그래서 API 호출, setTimeout과 같은 비동기로직은 리듀서 함수에서 작성할 수 없다. 순수함수의 규칙에 위배되기 때문이다.
@@ -9,7 +9,7 @@ React-Redux에서는 비동기 로직을 리듀서 함수에 넣을 수 없다. 
 
 
 
-## 2. createAsyncThunk
+## 1. createAsyncThunk
 
 Thunk에서 지원하는 위 메소드를 활용하면 리덕스 툴킷 내에서 비동기 로직을 작성할 수 있다. 그리고 그 결과를 리듀서 함수 내에 전달받아 적절히 처리할 수 있다.
 
@@ -73,7 +73,7 @@ createAsyncThunk에서 return한 데이터는 action.payload로 받을 수 있�
 
 
 
-## 3. dispatch 하기
+## 2. dispatch 하기
 
 dispatch 또한 일반적인 방법과 다르지 않다.
 

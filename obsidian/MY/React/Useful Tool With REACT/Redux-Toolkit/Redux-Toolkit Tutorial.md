@@ -1,4 +1,4 @@
-# 1.Redux-Toolkit Tutorial
+# Redux-Toolkit Tutorial
 
 
 Redux-Toolkit은 기존 React-Redux의 단점을 보완하여 좀 더 간편하게 Redux를 사용할 수 있게 개량된 최신버전의 Redux이다. 실제 React-redux 사용 중 createStore를 사용 시, 신버전(Redux-toolkit) 사용을 권하고 있다. 
@@ -9,7 +9,7 @@ React-redux 사용 자체만으로 컴포넌트 내의 수많은 Props 전달을
 
 
 
-## 2. createSlice
+## 1. createSlice
 
 createSlice를 Redux-Toolkit을 시작하는 중요한 문법이다. 기존 리덕스에서는 액션타입과 액션생성함수, 초기상태 그리고 리듀서 함수를 모두 따로 작성하였다. 물론 기능 별로 모듈화하여 하나의 리듀서 파일에 작성한다하더라도 액션타입 설정과 액션생성함수, 초기상태, 그리고 리듀서 함수 작성 총 세 가지의 보일러 플레이트 코드를 작성하여야 한다.
 
@@ -40,7 +40,7 @@ export default countSlice;
 
 
 
-## 3. configureStore
+## 2. configureStore
 
 기존 Redux에서는 모든 리듀서를 combine하여 RootReducer로 만든 다음, creatStore를 통해 store를 생성할 수 있었다. 하지만 리덕스 툴킷은 combineReducer를 생략할 수 있다. configureStore를 통해 여러 개의 slice에 등록된 리듀서를 한꺼번에 combine하여 곧바로 store에 등록할 수 있다.
 
@@ -78,7 +78,7 @@ root.render(
 
 
 
-## 4. state 사용 & dispatch하기
+## 3. state 사용 & dispatch하기
 
 리덕스 툴킷을 통해 작성한 상태들을 일반 컴포넌트에서 받아올 수 있으며, 액션을 디스패치 하여 그 결과를 받아올 수도 있다.
 
