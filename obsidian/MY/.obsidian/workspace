@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Express.js/POST 요청 처리.md",
+            "file": "Heroku/Heroku Error.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Express.js/POST 요청 처리.md",
+                "file": "Heroku/Heroku Error.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Express.js/POST 요청 처리.md",
+                "file": "Heroku/Heroku Error.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Express.js/POST 요청 처리.md"
+                "file": "Heroku/Heroku Error.md"
               }
             }
           }
@@ -130,6 +130,8 @@
   },
   "active": "772ada30128c8732",
   "lastOpenFiles": [
+    "Heroku/Heroku Tutorial.md",
+    "Express.js/POST 요청 처리.md",
     "Express.js/Express.js Tutorial.md",
     "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
     "React/Useful Tool With REACT/Redux-Toolkit/Redux-Toolkit Tutorial.md",
@@ -137,8 +139,6 @@
     "React/Useful Tool With REACT/react-router-dom v6/nested Routing.md",
     "React/Event.md",
     "React/useEffect.md",
-    "Express.js/POST 요청 처리.md",
-    "React/forwardRef.md",
-    "Axios/Axios Tutorial.md"
+    "React/forwardRef.md"
   ]
 }
