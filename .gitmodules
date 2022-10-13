@@ -31,3 +31,6 @@
 [submodule "jungto"]
 	path = jungto
 	url = https://github.com/wisberry2022/jungto.git
+[submodule "portfolio"]
+	path = portfolio
+	url = https://github.com/wisberry2022/portfolio.git
