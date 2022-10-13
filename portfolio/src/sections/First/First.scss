@@ -1,0 +1,164 @@
+@keyframes autoOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.first {
+  background-image: url('../../../public/first_background.jpg');
+  background-size: cover;
+
+  .top {
+    position: relative;
+    border-bottom: 0.1rem solid #aaa;
+    height: 50vh;
+    transition: 1s;
+
+    &:hover {
+      background-color: #111;
+      color: #fff;
+
+      .float_box::after {
+        background-color: #fff;
+      }
+    }
+
+    .float_box {
+      position: absolute;
+      top: 4%;
+      left: 1.5%;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -4%;
+        width: 1%;
+        height: 100%;
+        background-color: #333;
+        transition: 0.5s;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+    }
+
+    .top_title {
+      position: absolute;
+      left: 50%;
+      bottom: 1rem;
+      transform: translateX(-50%);
+
+      .main_title {
+        width: 110rem;
+
+        >div {
+
+          p {
+            font-size: 4.5rem;
+            font-weight: 300;
+            line-height: 1.4;
+            text-align: left;
+          }
+
+          strong {
+            font-size: 4.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    height: 50vh;
+    position: relative;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #111;
+      color: #fff;
+    }
+
+    .bottom_title {
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .main_title {
+        width: 110rem;
+
+        p {
+          font-size: 4.5rem;
+          font-weight: 300;
+          line-height: 1.4;
+          text-align: left;
+        }
+
+        strong {
+          font-size: 4.5rem;
+        }
+      }
+    }
+
+    .tech_box {
+      position: absolute;
+      right: 1.5%;
+      bottom: 4%;
+      display: flex;
+
+      @for $i from 1 through 2 {
+        .mark_0#{$i} {
+          background-image: url('../../../public/mark_0#{$i}.png');
+        }
+      }
+
+
+      div {
+        display: flex;
+        gap: 1rem;
+        // border: 0.1rem solid #999;
+        border-radius: 5rem;
+        padding: 1rem 3rem;
+        transition: 0.5s;
+
+        &:first-child {
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 0.2rem;
+            height: 2.5rem;
+            background-color: #ddd;
+          }
+        }
+
+        figure {
+          position: relative;
+          width: 3rem;
+          height: 3rem;
+
+          &.mark_01 {
+            background-position-x: 90%;
+          }
+        }
+
+        span {
+          transform: translateY(20%);
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+// * {
+//   outline: 1px solid #000;
+// }
+
+.third {
+  background-image: url('../../../public/third_background.jpg');
+  // background-position-x: 30rem;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    border: 0.5rem solid #000;
+    background-color: #fff;
+
+    .div_title {
+      margin-bottom: 2rem;
+      font-size: 2.9rem;
+      text-align: left;
+    }
+
+    >div {
+      flex: 1;
+      padding: 3.5rem;
+    }
+
+    .top {
+      border-bottom: 0.1rem solid #ddd;
+
+      .title_box {
+        margin-bottom: 3.5rem;
+      }
+
+
+      .info_desc {
+        display: flex;
+        gap: 2.5rem;
+
+        >div {
+          flex: 1;
+          height: 31rem;
+
+          .sub_desc {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+
+            >li {
+              display: flex;
+              flex-direction: column;
+              width: 30rem;
+
+              &:last-child {
+                width: 50rem;
+              }
+
+              strong {
+                display: block;
+                margin-bottom: 1rem;
+                font-size: 1.6rem;
+              }
+
+              span {
+                display: block;
+                font-size: 1.3rem;
+              }
+
+              .tech_list {
+                display: flex;
+                justify-content: flex-start;
+                margin-left: 5rem;
+
+                >li {
+                  width: 10rem;
+
+                  figure {
+                    outline: 1px solid #000;
+                    margin: 0 auto;
+                    width: 5rem;
+                    height: 5rem;
+                  }
+
+                  span {
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+
+          &.left {
+            border-right: 0.1rem solid #ddd;
+          }
+
+          // &.right {
+          //   .sub_desc {
+          //     justify-content: center;
+          //   }
+          // }
+
+
+          .desc {
+            h5 {
+              margin-bottom: 2.5rem;
+              font-size: 2.4rem;
+              font-weight: 500;
+            }
+
+            .sub_info {
+              margin-bottom: 3rem;
+
+              strong {
+                display: block;
+                margin-bottom: 1rem;
+                font-size: 1.9rem;
+              }
+
+              p {
+                font-size: 1.5rem;
+                line-height: 1.2;
+              }
+
+
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}
