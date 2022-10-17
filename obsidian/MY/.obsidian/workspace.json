@@ -4,16 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "772ada30128c8732",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md",
-            "mode": "source",
-            "source": false
+        "id": "64adbba7ea444d2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "772ada30128c8732",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "87cdc7e37c8fae16",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React/useState.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -31,7 +50,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -77,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md",
+                "file": "React/useState.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md",
+                "file": "React/useState.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md"
+                "file": "React/useState.md"
               }
             }
           }
@@ -128,7 +149,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bfcdf524260c6ae2",
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "87cdc7e37c8fae16",
   "lastOpenFiles": [
     "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
     "React/Useful Tool With REACT/react-router-dom v6/useParams.md",
