@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/useState.md",
+                "file": "JS/Promise.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/useState.md",
+                "file": "JS/Promise.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/useState.md",
+                "file": "JS/Promise.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/useState.md"
+                "file": "JS/Promise.md"
               }
             }
           }
@@ -154,6 +154,8 @@
   },
   "active": "87cdc7e37c8fae16",
   "lastOpenFiles": [
+    "JS/async & await.md",
+    "React/useState.md",
     "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
     "React/Useful Tool With REACT/react-router-dom v6/useParams.md",
     "React/Useful Tool With REACT/react-router-dom v6/nested Routing.md",
@@ -161,8 +163,6 @@
     "Heroku/Heroku Error.md",
     "Heroku/Heroku Tutorial.md",
     "Express.js/POST 요청 처리.md",
-    "Express.js/Express.js Tutorial.md",
-    "React/Useful Tool With REACT/Redux-Toolkit/Redux-Toolkit Tutorial.md",
-    "React/Prop.md"
+    "Express.js/Express.js Tutorial.md"
   ]
 }
