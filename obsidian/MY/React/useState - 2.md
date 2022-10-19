@@ -136,9 +136,6 @@ const Parent = () => {
 			{console.log(num)}
 		</>
 	)
-	
-
-	
 }
 
 ```
