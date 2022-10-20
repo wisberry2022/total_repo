@@ -60,3 +60,22 @@ let StyledTitle = styled.h1`
 ```
 
 위 코드를 보면, 일반적인 Component와 동일하게 props는 객체의 형태로 전달됨을 알 수 있다. prop을 설정하면, 하위 컴포넌트(StyledTitle)에서는 전달받은 prop을 key로 받을 수 있다.
+
+
+### 2-2. Extending Styles
+
+
+기존에 존재하는 Styled-component를 바탕으로 디자인을 확장할 수 있다. 기존에 선언된 Styled-Component를 Styled-component로 다시 선언한다.
+
+```javascript
+
+import * as Styled from './Styled';
+
+const CustomDiv = styled(Styled.GreatDiv)`
+	background-color: ${props => props.color || '10rem 0'};
+`;
+
+
+```
+
+보통의 Styled-Component의 경우 styled.<HTML Tag> 와 같은 형태로 사용하나, Extend의 경우 괄호를 사용한다.
