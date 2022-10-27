@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "033a6a001c8f4917",
+            "id": "d4a993bbcafa0c2e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Next.js/Route in Next.js.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "94747cd119a0b0d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/Next.js/Route in Next.js.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a9aeb6dcdf1ec453",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/Next.js/Next.js란 무엇인가.md",
+                "file": "React/Useful Tool With REACT/emotion/Emotion.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Next.js/Next.js란 무엇인가.md",
+                "file": "React/Useful Tool With REACT/emotion/Emotion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Next.js/Next.js란 무엇인가.md",
+                "file": "React/Useful Tool With REACT/emotion/Emotion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Next.js/Next.js란 무엇인가.md"
+                "file": "React/Useful Tool With REACT/emotion/Emotion.md"
               }
             }
           }
@@ -161,20 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "a9aeb6dcdf1ec453",
+  "active": "d4a993bbcafa0c2e",
   "lastOpenFiles": [
+    "React/Useful Tool With REACT/emotion/emotion 사용 시 주의사항.md",
+    "React/Useful Tool With REACT/emotion/Emotion.md",
     "React/Next.js/Route in Next.js.md",
-    "React/useState - 2.md",
-    "React/forwardRef.md",
-    "React/Event.md",
-    "React/useEffect.md",
-    "Custom Hook.md",
+    "MongoDB/MongoDB Tutorial.md",
+    "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
+    "React/Useful Tool With REACT/Redux/Redux.md",
+    "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
     "React/Next.js/Next.js란 무엇인가.md",
-    "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md",
-    "React/Useful Tool With REACT/Redux-Toolkit/Redux-Toolkit Tutorial.md",
-    "Markdown Tutorial.md"
+    "React/useState - 2.md",
+    "React/forwardRef.md"
   ]
 }
