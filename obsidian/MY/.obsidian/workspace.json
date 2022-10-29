@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
+                "file": "React/Useful Tool With REACT/Emotion.js/Emotion.js.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
+                "file": "React/Useful Tool With REACT/Emotion.js/Emotion.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
+                "file": "React/Useful Tool With REACT/Emotion.js/Emotion.js.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md"
+                "file": "React/Useful Tool With REACT/Emotion.js/Emotion.js.md"
               }
             }
           }
@@ -149,11 +149,14 @@
     "width": 300,
     "collapsed": true
   },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
   "active": "c1f925d939685902",
   "lastOpenFiles": [
+    "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
     "React/Useful Tool With REACT/Emotion.js/Emotion.js 사용 시 주의사항.md",
     "React/Useful Tool With REACT/Emotion.js/Emotion.js.md",
-    "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
     "React/Next.js/Route in Next.js.md",
     "MongoDB/MongoDB Tutorial.md",
     "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
