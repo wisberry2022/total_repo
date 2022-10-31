@@ -34,3 +34,6 @@
 [submodule "portfolio"]
 	path = portfolio
 	url = https://github.com/wisberry2022/portfolio.git
+[submodule "programmers"]
+	path = programmers
+	url = https://github.com/wisberry2022/programmers.git
