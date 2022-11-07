@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b1088cb0d91ef388",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.0.3"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -149,7 +159,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c1f925d939685902",
+  "active": "b1088cb0d91ef388",
   "lastOpenFiles": [
     "React/Useful Tool With REACT/Emotion.js/Emotion.js.md",
     "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
