@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a66aa6eb98608519",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TypeScript/0. 기본 타입.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Next.js/Next.js란 무엇인가.md",
+                "file": "TypeScript/0. 기본 타입.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Next.js/Next.js란 무엇인가.md",
+                "file": "TypeScript/0. 기본 타입.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Next.js/Next.js란 무엇인가.md"
+                "file": "TypeScript/0. 기본 타입.md"
               }
             }
           }
@@ -149,8 +161,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c1f925d939685902",
+  "active": "a66aa6eb98608519",
   "lastOpenFiles": [
+    "React/Next.js/Next.js란 무엇인가.md",
     "React/Useful Tool With REACT/Emotion.js/Emotion.js.md",
     "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
     "React/Useful Tool With REACT/Emotion.js/Emotion.js 사용 시 주의사항.md",
@@ -159,7 +172,6 @@
     "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
     "React/Useful Tool With REACT/Redux/Redux.md",
     "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
-    "React/Next.js/Next.js란 무엇인가.md",
     "React/useState - 2.md"
   ]
 }
