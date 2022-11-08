@@ -32,6 +32,7 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "a66aa6eb98608519",
             "type": "leaf",
             "state": {
@@ -40,6 +41,14 @@
                 "file": "TypeScript/0. 기본 타입.md",
                 "mode": "source",
                 "source": false
+=======
+            "id": "b1088cb0d91ef388",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.0.3"
+>>>>>>> c15988da9503519029dd9f55e2c2f402f729818e
               }
             }
           }
@@ -161,7 +170,11 @@
     "width": 300,
     "collapsed": true
   },
+<<<<<<< HEAD
   "active": "a66aa6eb98608519",
+=======
+  "active": "b1088cb0d91ef388",
+>>>>>>> c15988da9503519029dd9f55e2c2f402f729818e
   "lastOpenFiles": [
     "React/Next.js/Next.js란 무엇인가.md",
     "React/Useful Tool With REACT/Emotion.js/Emotion.js.md",

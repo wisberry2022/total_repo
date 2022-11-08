@@ -37,3 +37,6 @@
 [submodule "programmers"]
 	path = programmers
 	url = https://github.com/wisberry2022/programmers.git
+[submodule "javaPractice"]
+	path = javaPractice
+	url = https://github.com/wisberry2022/javaPractice.git
