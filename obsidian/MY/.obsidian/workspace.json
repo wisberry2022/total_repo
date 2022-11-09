@@ -4,56 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "0f87bdb621774f52",
+        "id": "843f340a98c4d829",
         "type": "tabs",
         "children": [
           {
-            "id": "d4a993bbcafa0c2e",
+            "id": "772ada30128c8732",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Useful Tool With REACT/Emotion.js/Emotion.js.md",
+                "file": "React/Reducer & useReducer.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "c1f925d939685902",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/Next.js/Next.js란 무엇인가.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-<<<<<<< HEAD
-            "id": "a66aa6eb98608519",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TypeScript/0. 기본 타입.md",
-                "mode": "source",
-                "source": false
-=======
-            "id": "b1088cb0d91ef388",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.0.3"
->>>>>>> c15988da9503519029dd9f55e2c2f402f729818e
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript/0. 기본 타입.md",
+                "file": "React/Reducer & useReducer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript/0. 기본 타입.md",
+                "file": "React/Reducer & useReducer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript/0. 기본 타입.md"
+                "file": "React/Reducer & useReducer.md"
               }
             }
           }
@@ -170,21 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-<<<<<<< HEAD
-  "active": "a66aa6eb98608519",
-=======
-  "active": "b1088cb0d91ef388",
->>>>>>> c15988da9503519029dd9f55e2c2f402f729818e
+  "active": "772ada30128c8732",
   "lastOpenFiles": [
-    "React/Next.js/Next.js란 무엇인가.md",
-    "React/Useful Tool With REACT/Emotion.js/Emotion.js.md",
-    "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
-    "React/Useful Tool With REACT/Emotion.js/Emotion.js 사용 시 주의사항.md",
-    "React/Next.js/Route in Next.js.md",
-    "MongoDB/MongoDB Tutorial.md",
-    "React/Useful Tool With REACT/Redux/Redux의 파일구조.md",
-    "React/Useful Tool With REACT/Redux/Redux.md",
+    "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md",
     "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
-    "React/useState - 2.md"
+    "React/Useful Tool With REACT/react-router-dom v6/useParams.md",
+    "React/Useful Tool With REACT/react-router-dom v6/nested Routing.md",
+    "MongoDB/MongoDB Tutorial.md",
+    "Heroku/Heroku Error.md",
+    "Heroku/Heroku Tutorial.md",
+    "Express.js/POST 요청 처리.md",
+    "Express.js/Express.js Tutorial.md",
+    "React/Useful Tool With REACT/Redux-Toolkit/Redux-Toolkit Tutorial.md"
   ]
 }
