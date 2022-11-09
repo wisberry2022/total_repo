@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Reducer & useReducer.md",
+                "file": "TypeScript/0. 기본 타입.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Reducer & useReducer.md",
+                "file": "TypeScript/0. 기본 타입.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Reducer & useReducer.md",
+                "file": "TypeScript/0. 기본 타입.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Reducer & useReducer.md"
+                "file": "TypeScript/0. 기본 타입.md"
               }
             }
           }
@@ -138,15 +138,15 @@
   },
   "active": "772ada30128c8732",
   "lastOpenFiles": [
+    "CS/HTTPS와 SSL 인증서.md",
+    "TypeScript/0. 기본 타입.md",
+    "React/Reducer & useReducer.md",
     "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md",
     "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
     "React/Useful Tool With REACT/react-router-dom v6/useParams.md",
     "React/Useful Tool With REACT/react-router-dom v6/nested Routing.md",
     "MongoDB/MongoDB Tutorial.md",
     "Heroku/Heroku Error.md",
-    "Heroku/Heroku Tutorial.md",
-    "Express.js/POST 요청 처리.md",
-    "Express.js/Express.js Tutorial.md",
-    "React/Useful Tool With REACT/Redux-Toolkit/Redux-Toolkit Tutorial.md"
+    "Heroku/Heroku Tutorial.md"
   ]
 }
