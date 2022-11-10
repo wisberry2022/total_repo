@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "772ada30128c8732",
+            "id": "31b571b68b584797",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9cda583cac99edbe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TypeScript/2. Union Type.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript/0. 기본 타입.md",
+                "file": "TypeScript/2. Union Type.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript/0. 기본 타입.md",
+                "file": "TypeScript/2. Union Type.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript/0. 기본 타입.md"
+                "file": "TypeScript/2. Union Type.md"
               }
             }
           }
@@ -136,17 +149,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "772ada30128c8732",
+  "active": "9cda583cac99edbe",
   "lastOpenFiles": [
-    "CS/HTTPS와 SSL 인증서.md",
     "TypeScript/0. 기본 타입.md",
+    "TypeScript/1. type과 interface.md",
+    "무제파일.md",
+    "CS/HTTPS와 SSL 인증서.md",
     "React/Reducer & useReducer.md",
     "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md",
     "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
     "React/Useful Tool With REACT/react-router-dom v6/useParams.md",
     "React/Useful Tool With REACT/react-router-dom v6/nested Routing.md",
-    "MongoDB/MongoDB Tutorial.md",
-    "Heroku/Heroku Error.md",
-    "Heroku/Heroku Tutorial.md"
+    "MongoDB/MongoDB Tutorial.md"
   ]
 }
