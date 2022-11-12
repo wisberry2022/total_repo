@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5bcff9c77ea6f629",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React/Next.js/API Route in Next.js.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript/2. Union Type.md",
+                "file": "React/Next.js/API Route in Next.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript/2. Union Type.md",
+                "file": "React/Next.js/API Route in Next.js.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript/2. Union Type.md"
+                "file": "React/Next.js/API Route in Next.js.md"
               }
             }
           }
@@ -149,8 +161,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9cda583cac99edbe",
+  "active": "5bcff9c77ea6f629",
   "lastOpenFiles": [
+    "TypeScript/2. Union Type.md",
     "TypeScript/0. 기본 타입.md",
     "TypeScript/1. type과 interface.md",
     "무제파일.md",
@@ -159,7 +172,6 @@
     "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md",
     "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
     "React/Useful Tool With REACT/react-router-dom v6/useParams.md",
-    "React/Useful Tool With REACT/react-router-dom v6/nested Routing.md",
-    "MongoDB/MongoDB Tutorial.md"
+    "React/Useful Tool With REACT/react-router-dom v6/nested Routing.md"
   ]
 }
