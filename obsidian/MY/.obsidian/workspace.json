@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "843f340a98c4d829",
+        "id": "510aad725bd149a8",
         "type": "tabs",
         "children": [
           {
-            "id": "31b571b68b584797",
+            "id": "64c7a7a453751b83",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/0. 기본 타입.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9cda583cac99edbe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TypeScript/2. Union Type.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5bcff9c77ea6f629",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/Next.js/API Route in Next.js.md",
+                "file": "React/Next.js/Next.js에서 MongoDB 연결하기.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Next.js/API Route in Next.js.md",
+                "file": "React/Next.js/Next.js에서 MongoDB 연결하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Next.js/API Route in Next.js.md",
+                "file": "React/Next.js/Next.js에서 MongoDB 연결하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Next.js/API Route in Next.js.md"
+                "file": "React/Next.js/Next.js에서 MongoDB 연결하기.md"
               }
             }
           }
@@ -161,17 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5bcff9c77ea6f629",
+  "active": "64c7a7a453751b83",
   "lastOpenFiles": [
-    "TypeScript/2. Union Type.md",
-    "TypeScript/0. 기본 타입.md",
-    "TypeScript/1. type과 interface.md",
-    "무제파일.md",
-    "CS/HTTPS와 SSL 인증서.md",
-    "React/Reducer & useReducer.md",
+    "React/Next.js/Route in Next.js.md",
+    "React/Useful Tool With REACT/nodemon.md",
+    "React/Useful Tool With REACT/concurrently.md",
     "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md",
-    "React/Useful Tool With REACT/Redux-Toolkit/Thunk with Redux-Toolkit.md",
+    "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
     "React/Useful Tool With REACT/react-router-dom v6/useParams.md",
-    "React/Useful Tool With REACT/react-router-dom v6/nested Routing.md"
+    "React/Useful Tool With REACT/react-router-dom v6/nested Routing.md",
+    "React/Next.js/Next.js에서 MongoDB 연결하기.md",
+    "Markdown Tutorial.md",
+    "TypeScript/3. Generic.md"
   ]
 }
