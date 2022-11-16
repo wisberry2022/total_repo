@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "510aad725bd149a8",
+        "id": "f3a5157461301bb0",
         "type": "tabs",
         "children": [
           {
-            "id": "64c7a7a453751b83",
+            "id": "89fc9a752df6c32c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
+                "file": "TypeScript/0. 기본 타입.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1efc79d124451628",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TypeScript/TS in React/Props 전달하기.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
+                "file": "TypeScript/TS in React/Props 전달하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
+                "file": "TypeScript/TS in React/Props 전달하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md"
+                "file": "TypeScript/TS in React/Props 전달하기.md"
               }
             }
           }
@@ -136,17 +149,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "64c7a7a453751b83",
+  "active": "1efc79d124451628",
   "lastOpenFiles": [
+    "TypeScript/0. 기본 타입.md",
+    "TypeScript/1. type과 interface.md",
+    "TypeScript/2. Union Type.md",
+    "TypeScript/3. Generic.md",
+    "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
     "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md",
     "React/Useful Tool With REACT/Emotion.js/Emotion.js.md",
     "React/Next.js/Next.js에서 MongoDB 연결하기.md",
     "React/Next.js/Route in Next.js.md",
-    "React/Useful Tool With REACT/nodemon.md",
-    "React/Useful Tool With REACT/concurrently.md",
-    "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
-    "React/Useful Tool With REACT/react-router-dom v6/useParams.md",
-    "React/Useful Tool With REACT/react-router-dom v6/nested Routing.md",
-    "Markdown Tutorial.md"
+    "React/Useful Tool With REACT/nodemon.md"
   ]
 }
