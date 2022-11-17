@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/TS in React/Props 전달하기.md",
+                "file": "TypeScript/3. Generic.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fab4c4e5ab7c0df9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "React/Next.js/Next.js에서 환경변수 설정하기.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TypeScript/TS in React/Props 전달하기.md",
+                "file": "React/Next.js/Next.js에서 환경변수 설정하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TypeScript/TS in React/Props 전달하기.md",
+                "file": "React/Next.js/Next.js에서 환경변수 설정하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TypeScript/TS in React/Props 전달하기.md"
+                "file": "React/Next.js/Next.js에서 환경변수 설정하기.md"
               }
             }
           }
@@ -149,17 +161,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1efc79d124451628",
+  "active": "fab4c4e5ab7c0df9",
   "lastOpenFiles": [
-    "TypeScript/0. 기본 타입.md",
-    "TypeScript/1. type과 interface.md",
-    "TypeScript/2. Union Type.md",
-    "TypeScript/3. Generic.md",
-    "React/Useful Tool With REACT/Emotion.js/Media Query in Emotion.js.md",
-    "React/Useful Tool With REACT/Styled-Components/Styled-Components Tutorial.md",
-    "React/Useful Tool With REACT/Emotion.js/Emotion.js.md",
     "React/Next.js/Next.js에서 MongoDB 연결하기.md",
+    "React/Next.js/Next.js에서 환경변수 설정하기.md",
     "React/Next.js/Route in Next.js.md",
-    "React/Useful Tool With REACT/nodemon.md"
+    "React/Next.js/API Route in Next.js.md",
+    "React/Next.js/Next.js란 무엇인가.md",
+    "무제파일.md",
+    "TypeScript/3. Generic.md",
+    "TypeScript/TS in React/Props 전달하기.md",
+    "TypeScript/0. 기본 타입.md",
+    "TypeScript/1. type과 interface.md"
   ]
 }
