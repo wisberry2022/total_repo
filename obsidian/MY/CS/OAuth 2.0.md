@@ -89,3 +89,29 @@ Access Token을 요청하기 전에, 앱은 사용자로부터 권한 부여에 
 
 승인 코드 유형은 신뢰성 높은 앱이 사용하기에 최적화 되어 있다. 승인 코드를 사용할 경우 Access Token 뿐만 아니라 Refresh Token도 요청할 수 있다. 승인 코드는 Redirection 기반 절차를 활용하기 때문에, 앱은 User-Agent를 통해 사용자와 상호작용할 수 있어야 하며, 또한 Resource Server로부터 Redirection URL에서 요청을 수신할 수 있어야 한다.
 
+승인 코드 유형의 절차는 아래와 같다.
+
+
+1. 앱은 웹 브라우저 상으로 사용자를 Resource Server의 Authorization endpoint로 안내한다. 이 때, 앱은 앱의 식별자, 요청하는 scope, 로컬 상태 및 Redirection URL에 대한 정보도 함께 전송한다. 사용자가 접근 권한 부여에 동의하면 Resource Server는 사용자를 Redirection URL로 이동시키게 된다.
+2. Resource Server는 사용자에 대한 인증을 수행하고 앱의 접근 요청에 대한 사용자의 동의 여부를 확인한다.
+3. 사용자가 앱의 접근에 동의하면 권한 제공기관은 승인 코드를 발급하고 앱이 요청한 Redirection URL로 웹 브라우저를 안내한다. 이 때 사용되는 Redirection URL에 승인 코드와 앱이 요청 시 제출한 로컬 상태에 대한 정보가 포함된다.
+4. 앱은 발급받은 승인 코드를 Resource Server의 Token endpoint에 제출하고 접근 토큰을 요청한다. 이 때, 앱에 대한 인증 정보와 함께 앱이 승인 코드를 제공받은 Redirection URL을 제출함으로써 Resource Server는 앱의 요청이 유효함을 검증할 수 있도록 한다.
+5. Resource Server는 앱을 인증하고 승인 코드가 유효함을 확인하며, 접근 토큰 요청에 제출된 Redirection URL이 승인 코드를 발급한 Redirection URL과 일치함을 확인한다.  모든 사항에 문제 없음이 확인되면, 권한 제공기관은 Access Token을 발급한다. 이 때 요청되었을 경우, Refresh Token도 함께 제공한다.
+
+## 4-2. 암묵적 유형(Implicit Type)
+
+승인 코드 방식과 유사하지만, 사용자가 Resource Server에 인증받은 후 승인 코드 대신에 Access Token을 바로 발급하는 유형이다.
+
+암묵적 유형의 권한 부여 방식은 SPA 앱을 위해 만들어진 방식이다. 암묵적 유형의 권한 부여 방식의 절차적 흐름은 승인 코드 방식의 절차적 흐름과 매우 흡사한다. 차이점은 Resource Server로부터 승인 코드를 발급받지 않고 대신 바로 Access Token을 발급 받는다는 점이다. 해당 유형은 보안 유지를 위해 Refresh Token 발행은 불가능하다.
+
+## 4-3. 사용자 비밀번호 인증 유형(Resource Owner Password Credentials Type) 
+
+사용자가 앱 상으로 ID/비밀번호로 로그인하여 인증하고 권한 부여에 동의하면 Access Token을 발급하는 유형이다. 
+
+사용자 비밀번호 인증 유형의 권한 부여 방식은 앱이 운영체제일 경우와 같이 사용자가 앱 사이에 높은 신뢰가 형성된 경우에 적합하다. Resource Server는 다른 유형의 권한 부여 방식이 불가한 특수한 경우에만 사용자 비밀번호 인증 방식이 사용되도록 주의를 기울여야 한다.
+
+## 4-4. 앱 인증 유형 (Client Credentials Type)
+
+권한 소유자가 앱인 경우 앱이 발급받은 Client ID와 Client Secret을 확인하여 앱에 대한 인증을 수행하고 권한을 부여 받는 유형이다.
+
+앱 인증 방식은 사용자가 앱인 경우에 활용된다. 앱 인증(Client Credentials) 유형을 사용하는 방법은 사용자 비밀번호 인증 유형을 사용하는 방법과 유사하다. 사용자 비밀번호 인증 방식에서 사용자 ID와 비밀번호가 사용되듯이, 앱 인증 방식에서는 Client ID와 Client Secret을 통해 앱을 인증한다. 인증에 성공하면 권한 제공기관은 앱에게 Access Token을 발급하게 된다. 앱 인증 방식은 Refresh Token 사용을 금지한다.
