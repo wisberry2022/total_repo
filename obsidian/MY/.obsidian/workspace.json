@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/BasicGrammar/클래스.md",
+                "file": "JAVA/BasicGrammar/자료형/ArrayList.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JAVA/BasicGrammar/클래스.md",
+                "file": "JAVA/BasicGrammar/자료형/ArrayList.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JAVA/BasicGrammar/클래스.md",
+                "file": "JAVA/BasicGrammar/자료형/ArrayList.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JAVA/BasicGrammar/클래스.md"
+                "file": "JAVA/BasicGrammar/자료형/ArrayList.md"
               }
             }
           }
@@ -187,9 +187,9 @@
   },
   "active": "7c254a2ae034ed24",
   "lastOpenFiles": [
+    "JAVA/BasicGrammar/클래스.md",
     "JAVA/BasicGrammar/자료형/ArrayList.md",
     "JAVA/BasicGrammar/forEach문.md",
-    "JAVA/BasicGrammar/클래스.md",
     "JAVA/BasicGrammar/가변인자.md",
     "무제파일.md",
     "CS/OAuth 2.0.md",
