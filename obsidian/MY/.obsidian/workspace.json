@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/Call-by-Value와 Call-by-Reference.md",
+                "file": "Etc/OS/Window/Batch Script/Batch Script.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JAVA/Call-by-Value와 Call-by-Reference.md",
+                "file": "Etc/OS/Window/Batch Script/Batch Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JAVA/Call-by-Value와 Call-by-Reference.md",
+                "file": "Etc/OS/Window/Batch Script/Batch Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JAVA/Call-by-Value와 Call-by-Reference.md"
+                "file": "Etc/OS/Window/Batch Script/Batch Script.md"
               }
             }
           }
@@ -151,8 +151,8 @@
   },
   "active": "0d0e16bbdf789534",
   "lastOpenFiles": [
-    "JAVA/BasicGrammar/자료형/변수 기본.md",
     "JAVA/Call-by-Value와 Call-by-Reference.md",
+    "JAVA/BasicGrammar/자료형/변수 기본.md",
     "JAVA/BasicGrammar/제어문/반복문.md",
     "JAVA/BasicGrammar/연산자.md",
     "JAVA/JAVA Intro.md",
