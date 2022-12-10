@@ -40,3 +40,6 @@
 [submodule "javaPractice"]
 	path = javaPractice
 	url = https://github.com/wisberry2022/javaPractice.git
+[submodule "webcash"]
+	path = webcash
+	url = https://github.com/wisberry2022/webcash.git

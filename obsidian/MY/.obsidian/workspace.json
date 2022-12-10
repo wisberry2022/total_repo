@@ -25,7 +25,6 @@
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
                 "file": "JAVA/JAVA Intro.md",
                 "mode": "source",
                 "source": false
@@ -39,16 +38,13 @@
               "type": "markdown",
               "state": {
                 "file": "JAVA/BasicGrammar/자료형/자료형 기초.md",
-=======
-                "file": "Etc/OS/Window/Batch Script/Batch Script.md",
->>>>>>> 860e2c293876a43019ef3751325d3eb75dedf22d
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -114,11 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "JAVA/JAVA Intro.md",
-=======
-                "file": "Etc/OS/Window/Batch Script/Batch Script.md",
->>>>>>> 860e2c293876a43019ef3751325d3eb75dedf22d
+                "file": "JAVA/BasicGrammar/자료형/자료형 기초.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,11 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-                "file": "JAVA/JAVA Intro.md",
-=======
-                "file": "Etc/OS/Window/Batch Script/Batch Script.md",
->>>>>>> 860e2c293876a43019ef3751325d3eb75dedf22d
+                "file": "JAVA/BasicGrammar/자료형/자료형 기초.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,11 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< HEAD
-                "file": "JAVA/JAVA Intro.md"
-=======
-                "file": "Etc/OS/Window/Batch Script/Batch Script.md"
->>>>>>> 860e2c293876a43019ef3751325d3eb75dedf22d
+                "file": "JAVA/BasicGrammar/자료형/자료형 기초.md"
               }
             }
           }
@@ -177,17 +161,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0d0e16bbdf789534",
+  "active": "ffec6fb4d5762118",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "JAVA/BasicGrammar/자료형/자료형 기초.md",
-=======
-    "JAVA/Call-by-Value와 Call-by-Reference.md",
-    "JAVA/BasicGrammar/자료형/변수 기본.md",
-    "JAVA/BasicGrammar/제어문/반복문.md",
-    "JAVA/BasicGrammar/연산자.md",
->>>>>>> 860e2c293876a43019ef3751325d3eb75dedf22d
     "JAVA/JAVA Intro.md",
+    "JAVA/BasicGrammar/자료형/자료형 기초.md",
     "JAVA/BasicGrammar/연산자.md",
     "JAVA/BasicGrammar/자료형/문자&문자열 자료형.md",
     "JAVA/Call-by-Value와 Call-by-Reference.md",
