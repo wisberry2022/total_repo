@@ -4,16 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "031ce727116516b3",
+        "id": "8dfb75a08fc27f7e",
         "type": "tabs",
         "children": [
           {
-            "id": "e47d95acc8a75406",
+            "id": "263ea049b83c9131",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/소프트웨어/프로세스와 스레드.md",
+                "file": "JAVA/BasicGrammar/클래스/클래스.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6fc2b67b297f90b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JAVA/BasicGrammar/자료형/변수 기본.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3a8ab006177902c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS/소프트웨어/JVM 메모리 구조.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/소프트웨어/프로세스와 스레드.md",
+                "file": "JAVA/BasicGrammar/클래스/클래스.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/소프트웨어/프로세스와 스레드.md",
+                "file": "JAVA/BasicGrammar/클래스/클래스.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/소프트웨어/프로세스와 스레드.md"
+                "file": "JAVA/BasicGrammar/클래스/클래스.md"
               }
             }
           }
@@ -136,17 +160,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e47d95acc8a75406",
+  "active": "263ea049b83c9131",
   "lastOpenFiles": [
-    "JAVA/BasicGrammar/제어문/반복문.md",
-    "JAVA/BasicGrammar/자료형/자료형 기초.md",
     "JAVA/JAVA Intro.md",
-    "JAVA/BasicGrammar/연산자.md",
-    "JAVA/BasicGrammar/자료형/문자&문자열 자료형.md",
-    "JAVA/Call-by-Value와 Call-by-Reference.md",
     "JAVA/BasicGrammar/자료형/변수 기본.md",
-    "JAVA/BasicGrammar/식별자와 예약어.md",
-    "JAVA/자료구조/ArrayList.md",
-    "JAVA/BasicGrammar/제어문/forEach문.md"
+    "CS/소프트웨어/JVM 메모리 구조.md",
+    "JAVA/BasicGrammar/클래스/클래스.md",
+    "JAVA/JAVA compiler.md",
+    "JAVA/BasicGrammar/클래스/상속.md",
+    "JAVA/BasicGrammar/자료형/자료형 기초.md",
+    "CS/소프트웨어/프로세스와 스레드.md",
+    "JAVA/BasicGrammar/제어문/반복문.md",
+    "JAVA/BasicGrammar/연산자.md"
   ]
 }
