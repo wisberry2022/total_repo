@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "263ea049b83c9131",
+            "id": "bee870ac19e7b9d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/BasicGrammar/클래스/클래스.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fd24a0a1221b28a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAVA/BasicGrammar/클래스/this in class.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6fc2b67b297f90b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAVA/BasicGrammar/자료형/변수 기본.md",
+                "file": "Etc/OS/Window/Batch Script/Batch Script.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 401.5
   },
   "right": {
     "id": "0d7f2fae220a9832",
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JAVA/BasicGrammar/클래스/클래스.md",
+                "file": "Etc/OS/Window/Batch Script/Batch Script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JAVA/BasicGrammar/클래스/클래스.md",
+                "file": "Etc/OS/Window/Batch Script/Batch Script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JAVA/BasicGrammar/클래스/클래스.md"
+                "file": "Etc/OS/Window/Batch Script/Batch Script.md"
               }
             }
           }
@@ -160,17 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "263ea049b83c9131",
+  "active": "bee870ac19e7b9d6",
   "lastOpenFiles": [
-    "JAVA/BasicGrammar/클래스/this in class.md",
+    "React/Next.js/Next.js에서 MongoDB 연결하기.md",
+    "React/Next.js/API Route in Next.js.md",
+    "React/Next.js/Next.js란 무엇인가.md",
+    "React/Next.js/Next.js에서 환경변수 설정하기.md",
+    "JAVA/자료구조/배열(Array).md",
     "JAVA/BasicGrammar/클래스/클래스.md",
+    "JAVA/BasicGrammar/클래스/this in class.md",
     "JAVA/BasicGrammar/클래스/추상 클래스.md",
     "JAVA/BasicGrammar/클래스/상속.md",
-    "JAVA/BasicGrammar/자료형/변수 기본.md",
-    "CS/PL/객체 지향 프로그래밍.md",
-    "CS/소프트웨어/JVM 메모리 구조.md",
-    "JAVA/JAVA Intro.md",
-    "JAVA/JAVA compiler.md",
-    "JAVA/BasicGrammar/자료형/자료형 기초.md"
+    "JAVA/BasicGrammar/자료형/변수 기본.md"
   ]
 }
