@@ -1,0 +1,146 @@
+{
+  "main": {
+    "id": "c7e7d6dde2c4c840",
+    "type": "split",
+    "children": [
+      {
+        "id": "a104f54af7764f55",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ee8c1ef8bf74de4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MY/JAVA/BasicGrammar/자료형/자료형 기초.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cbd74f296406a2bc",
+    "type": "split",
+    "children": [
+      {
+        "id": "f43810d7f6cb96cb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08b7b85ca4a3c4ff",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c2dd2e7dc9f7b162",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "730529bb2067c221",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c088b7bc5c425437",
+    "type": "split",
+    "children": [
+      {
+        "id": "b18ebb2eaf732e77",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7caeea760d5d1699",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MY/JAVA/BasicGrammar/자료형/자료형 기초.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "eb73afa66334785d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MY/JAVA/BasicGrammar/자료형/자료형 기초.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9908fa72beb9078e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "73fc706595e15789",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MY/JAVA/BasicGrammar/자료형/자료형 기초.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "0ee8c1ef8bf74de4",
+  "lastOpenFiles": [
+    "MY/JAVA/BasicGrammar/자료형/변수 기본.md",
+    "MY/JAVA/BasicGrammar/자료형/문자&문자열 자료형.md",
+    "MY/JAVA/자료구조/배열(Array).md",
+    "MY/JAVA/자료구조/ArrayList.md"
+  ]
+}
