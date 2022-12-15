@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MY/JAVA/BasicGrammar/자료형/자료형 기초.md",
+                "file": "MY/JAVA/BasicGrammar/자료형/문자&문자열 자료형.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MY/JAVA/BasicGrammar/자료형/자료형 기초.md",
+                "file": "MY/JAVA/BasicGrammar/자료형/문자&문자열 자료형.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MY/JAVA/BasicGrammar/자료형/자료형 기초.md",
+                "file": "MY/JAVA/BasicGrammar/자료형/문자&문자열 자료형.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MY/JAVA/BasicGrammar/자료형/자료형 기초.md"
+                "file": "MY/JAVA/BasicGrammar/자료형/문자&문자열 자료형.md"
               }
             }
           }
@@ -139,8 +139,9 @@
   "active": "0ee8c1ef8bf74de4",
   "lastOpenFiles": [
     "MY/JAVA/BasicGrammar/자료형/변수 기본.md",
-    "MY/JAVA/BasicGrammar/자료형/문자&문자열 자료형.md",
     "MY/JAVA/자료구조/배열(Array).md",
+    "MY/JAVA/BasicGrammar/자료형/문자&문자열 자료형.md",
+    "MY/JAVA/BasicGrammar/자료형/자료형 기초.md",
     "MY/JAVA/자료구조/ArrayList.md"
   ]
 }
