@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MY/JAVA/자료구조/배열(Array).md",
+                "file": "MY/JAVA/BasicGrammar/클래스/추상 클래스.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d60a9ddc8630b0f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MY/JAVA/BasicGrammar/클래스/Interface.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MY/JAVA/자료구조/배열(Array).md",
+                "file": "MY/JAVA/BasicGrammar/클래스/Interface.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MY/JAVA/자료구조/배열(Array).md",
+                "file": "MY/JAVA/BasicGrammar/클래스/Interface.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MY/JAVA/자료구조/배열(Array).md"
+                "file": "MY/JAVA/BasicGrammar/클래스/Interface.md"
               }
             }
           }
@@ -148,14 +161,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0ee8c1ef8bf74de4",
+  "active": "d60a9ddc8630b0f9",
   "lastOpenFiles": [
+    "MY/JAVA/BasicGrammar/클래스/추상 클래스.md",
     "MY/JAVA/BasicGrammar/클래스/상속.md",
+    "MY/JAVA/자료구조/배열(Array).md",
     "MY/JAVA/BasicGrammar/자료형/문자&문자열 자료형.md",
     "MY/JAVA/BasicGrammar/자료형/변수 기본.md",
     "MY/JAVA/BasicGrammar/자료형/자료형 기초.md",
     "MY/JAVA/BasicGrammar/제어문/return, break, continue.md",
-    "MY/JAVA/자료구조/배열(Array).md",
     "MY/JAVA/자료구조/ArrayList.md"
   ]
 }
