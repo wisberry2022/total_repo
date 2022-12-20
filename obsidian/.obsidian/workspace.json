@@ -25,26 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MY/JAVA/BasicGrammar/클래스/Interface.md",
+                "file": "MY/JAVA/BasicGrammar/클래스/클래스.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "78153d3a80425c1c",
+            "id": "de85e2703a4e09e0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MY/JAVA/BasicGrammar/제어문/return, break, continue.md",
+                "file": "MY/JAVA/BasicGrammar/클래스/class에서의 final 활용.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6092d94ef3ea0b78",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MY/JAVA/BasicGrammar/자료형/Wrapper 객체.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MY/JAVA/BasicGrammar/클래스/Interface.md",
+                "file": "MY/JAVA/BasicGrammar/클래스/class에서의 final 활용.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MY/JAVA/BasicGrammar/클래스/Interface.md",
+                "file": "MY/JAVA/BasicGrammar/클래스/class에서의 final 활용.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MY/JAVA/BasicGrammar/클래스/Interface.md"
+                "file": "MY/JAVA/BasicGrammar/클래스/class에서의 final 활용.md"
               }
             }
           }
@@ -161,15 +173,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d60a9ddc8630b0f9",
+  "active": "de85e2703a4e09e0",
   "lastOpenFiles": [
     "MY/JAVA/BasicGrammar/클래스/추상 클래스.md",
+    "MY/JAVA/BasicGrammar/클래스/클래스.md",
+    "MY/JAVA/BasicGrammar/클래스/class에서의 final 활용.md",
+    "MY/JAVA/BasicGrammar/자료형/Wrapper 객체.md",
+    "MY/JAVA/BasicGrammar/제어문/return, break, continue.md",
     "MY/JAVA/BasicGrammar/클래스/상속.md",
+    "MY/JAVA/BasicGrammar/클래스/Interface.md",
     "MY/JAVA/자료구조/배열(Array).md",
     "MY/JAVA/BasicGrammar/자료형/문자&문자열 자료형.md",
-    "MY/JAVA/BasicGrammar/자료형/변수 기본.md",
-    "MY/JAVA/BasicGrammar/자료형/자료형 기초.md",
-    "MY/JAVA/BasicGrammar/제어문/return, break, continue.md",
-    "MY/JAVA/자료구조/ArrayList.md"
+    "MY/JAVA/BasicGrammar/자료형/변수 기본.md"
   ]
 }
