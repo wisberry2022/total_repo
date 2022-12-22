@@ -55,3 +55,4 @@ str.insert(4, "database");
 
 ```
 
+insert를 사용하면 StringBuffer의 특정 위치에 새로운 문자열을 삽입할 수 있다.

@@ -9,8 +9,11 @@ ArrayList는 자바에서 제공하는, 배열과 비슷한 자료구조이다. 
 	-  ArrayList는 데이터 추가 및 삭제 시 메모리를 재할당하기 때문에 속도가 Array보다 느리다.
 3. ArrayList는 다차원 배열이 불가능하다.
 	-  일반 배열은 2차원, 3차원 배열을 생성할 수 있으나, ArrayList의 경우 다차원 배열을 제작할 수 없다.
+4. ArrayList에 삽입되는 데이터의 자료형은 Object타입이다.
+	- ArrayList에는 다양한 자료형을 담을 수 있도록 Object 타입으로 데이터를 저장한다. int형의 경우 Integer 래퍼객체를, float의 경우 Float 래퍼객체가 담기게 되는 것이다.
 
-ArrayList를 사용하기 위해선 java.util에서 ArrayList를 import해야한다. 
+
+ArrayList를 사용하기 위해선 java.util에서 ArrayList를 import해야한다.  
 
 ```java
 import java.util.ArrayList;
@@ -69,3 +72,16 @@ int size = strList.size();
 ```
 
 해당 메소드는 int를 반환한다.
+
+
+## 5. indexOf()
+
+ArrayList에서 인자로 들어온 값을 반환한다. 단 원소가 중복될 경우, 처음으로 등장한 인자의 인덱스만 return한다. 만약 일치하는 원소가 없을 경우 -1을 반환한다.
+
+```java
+
+ArrayList test = new ArrayList();
+// ...
+test.indexOf(3333);
+
+```

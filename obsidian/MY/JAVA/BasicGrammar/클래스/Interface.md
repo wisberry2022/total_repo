@@ -1,5 +1,5 @@
 
-추상 클래스 사용을 위해 abstract class를 사용하였다. abstract class에서는 추상 메서드를 작성할 수도 있고, 그러지 않을 수도 있었다. 하지만 추상 메소드만 있다면, 이때는 더 이상 abstract class보다는 Interface를 사용한다.
+추상 클래스 사용을 위해 abstract class를 사용하였다. abstract class에서는 추상 메서드를 작성할 수도 있고, 그러지 않을 수도 있었다. 하지만 추상 메소드만 있다면, 이때는 abstract class보다는 Interface를 사용한다.
 
 ```java
 
@@ -41,7 +41,7 @@ interface Lec02 {
 
 ```
 
-위와 같이 선언해도 Lec02 함수를 오버라이드해야 한다. 
+위와 같이 선언해도 func02 함수를 오버라이드해야 한다. 
 
 Interface에서는 abstract 키워드 말고, 많은 것을 생략할 수 있다. 접근제어자, abstract, 그리고 상수를 넣고 싶다면 final, static까지도 생략 가능하다.
 
@@ -96,3 +96,35 @@ interface C extends A,B {
 }
 
 ```
+
+
+
+## 1. interface의 사용
+
+interface를 통해 class에 다양한 기능을 부착할 수 있다. interface는 그 자체로 인스턴스를 생성할 수는 없으나 아래와 같이 사용할 수도 있다.
+
+```java
+
+interface Branch {
+	public void func01();
+}
+
+class Tree implements Branch {
+	public void func01() {
+		// ...logic of func01
+	}
+}
+
+class Ex01 {
+	public static void main(String[] args) {
+		Branch a = new Branch(); // ... 사용 불가
+		Branch b = new Tree();   // ... 사용 가능
+
+		Tree c = new Tree();
+		Branch d = c;
+	}
+}
+
+```
+
+`Branch` interface를 상속받은 `Tree`를 활용하여 `b` 객체는 업캐스팅 될 수 있다.  `Tree`객체인 `c` 의 경우 Tree 생성자를 통해 생성되었으나 아래 줄에서 `Branch` 로 업캐스팅되었다. 인터페이스와 상속관계에 있는 클래스는 위와 같이 사용할 수도 있다.
