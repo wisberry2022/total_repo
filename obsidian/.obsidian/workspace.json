@@ -42,9 +42,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6052ca0f50d3ca24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MY/JAVA/자료구조/java.util/Map.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0f61cc8f0b1477f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MY/JAVA/Generic.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MY/JAVA/BasicGrammar/클래스/UpCasting & DownCasting.md",
+                "file": "MY/JAVA/Generic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MY/JAVA/BasicGrammar/클래스/UpCasting & DownCasting.md",
+                "file": "MY/JAVA/Generic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MY/JAVA/BasicGrammar/클래스/UpCasting & DownCasting.md"
+                "file": "MY/JAVA/Generic.md"
               }
             }
           }
@@ -171,17 +195,17 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4e64a8e003a11e6e",
+  "active": "0f61cc8f0b1477f8",
   "lastOpenFiles": [
+    "MY/JAVA/자료구조/java.util/Map.md",
+    "MY/JAVA/BasicGrammar/클래스/UpCasting & DownCasting.md",
     "MY/JAVA/BasicGrammar/클래스/this in class.md",
     "MY/JAVA/BasicGrammar/클래스/클래스.md",
     "MY/JAVA/BasicGrammar/클래스/상속.md",
-    "MY/JAVA/BasicGrammar/클래스/UpCasting & DownCasting.md",
     "MY/JAVA/BasicGrammar/자료형/변수 기본.md",
     "MY/JAVA/BasicGrammar/자료형/Wrapper 객체.md",
     "MY/JAVA/BasicGrammar/자료형/StringBuffer.md",
     "MY/JAVA/BasicGrammar/클래스/Interface.md",
-    "MY/JAVA/자료구조/java.util/Queue.md",
-    "MY/JAVA/자료구조/java.util/ArrayList.md"
+    "MY/JAVA/자료구조/java.util/Queue.md"
   ]
 }
