@@ -30,3 +30,24 @@ Java 1.7부터는 추론타입이 적용되어 아래와 같이 작성할 수도
 List<Integer> arr = new ArrayList<>();
 
 ```
+
+
+
+## 1. extends
+
+Generic에서도 extends를 사용할 수 있다. 원래는 class에서 상속관계를 지정할 때 사용하는 키워드이지만, Generic에서는 Generic을 제한하는 용도로 사용한다. 아래 코드를 보자.
+
+```java
+
+class Book<T extends Genre> {
+	T genre;
+	String name;
+
+	public Book(String name) {
+		this.name = name;
+	}
+}
+
+```
+
+Book의 경우 제네릭 타입으로 `Genre` 클래스와, `Genre` 클래스를 상속받는 자식 클래스만 올 수 있게 된다. 이처럼, `<T extends Type>`은, Generic 사용을 제한하기 위해 사용할 수 있다. 이 때 `extends` 키워드는 Generic으로 들어온 타입의 상한선을 지정해준다고 이해하면 편하다.
