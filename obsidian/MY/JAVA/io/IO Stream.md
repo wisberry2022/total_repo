@@ -47,3 +47,33 @@ os.write를 활용하는 방법은 다양하다. 위처럼 byte 배열을 생성
 
 
 ## 1. InputStream
+
+InputStream은 File의 데이터를 '나'로 향해 가지고 오는 것을 의미한다. 즉, File -> 나 인 것이다.
+
+```java
+
+File f = new File("readFile.txt");
+
+InputStream is = new FileInputStream(f);
+
+```
+
+FileInputStream의 생성자에는 File 객체를 전달 할 수 있다.
+
+
+### 1-1. is.read()
+
+```java
+
+int su;
+while(true) {
+	su = is.read();
+	if(su == -1) break;
+	System.out.print((char)su);
+}
+
+```
+
+파일 데이터를 읽는 것은, .read를 통해 진행한다. FileInputStream은 File의 데이터를 한꺼번에 읽는 것이 아닌 1Byte씩 데이터를 읽게 된다. InputStream이 File에서 더 이상 읽을 것이 없을 때에는 -1을 반환하게 된다. .read()에 인자를 주지 않을 경우 File로 부터 실제로 읽은 데이터를 int형으로 반환한다. 그에 따라 Console에 출력할 때 문자로 출력하고 싶다면, 형변환을 진행해야 한다.
+
+
