@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MY/JAVA/io/문자열 Stream.md",
+                "file": "MY/JAVA/Thread.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5c2bf1819c1e8936",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MY/JAVA/통신/통신.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ae09b79ef0877f15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MY/JAVA/통신/URL과 URI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,8 +110,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MY/JAVA/io/문자열 Stream.md",
-                "collapseAll": false,
+                "file": "MY/JAVA/통신/URL과 URI.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MY/JAVA/io/문자열 Stream.md",
+                "file": "MY/JAVA/통신/URL과 URI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MY/JAVA/io/문자열 Stream.md"
+                "file": "MY/JAVA/통신/URL과 URI.md"
               }
             }
           }
@@ -146,17 +171,17 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "08b7b85ca4a3c4ff",
+  "active": "7caeea760d5d1699",
   "lastOpenFiles": [
+    "MY/JAVA/통신/통신.md",
+    "MY/JAVA/Thread.md",
+    "MY/JAVA/io/문자열 Stream.md",
     "MY/JAVA/io/file 다루기.md",
     "MY/JAVA/io/IO Stream.md",
-    "MY/JAVA/io/문자열 Stream.md",
-    "MY/JAVA/Thread.md",
     "MY/JAVA/BasicGrammar/자료형/StringBuffer.md",
     "MY/JAVA/BasicGrammar/클래스/내부 클래스.md",
     "MY/JAVA/BasicGrammar/클래스/클래스.md",
     "MY/JAVA/BasicGrammar/클래스/class에서의 final 활용.md",
-    "MY/TypeScript/0. 기본 타입.md",
-    "MY/TypeScript/1. type과 interface.md"
+    "MY/TypeScript/0. 기본 타입.md"
   ]
 }
