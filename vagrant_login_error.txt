@@ -1,0 +1,5 @@
+vagrant 폴더 - cmd
+
+vagrant ssh
+sudo passwd
+<비밀번호 입력>
