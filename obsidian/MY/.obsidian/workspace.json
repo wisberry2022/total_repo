@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/JAVA in Web/JSP.md",
+                "file": "WebCash/프로젝트/점검 사항.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "15442eb58b6a8b22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebCash/프로젝트/소프트웨어 개발 방법론.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "13c4db94ce4e9f1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebCash/프로젝트/점검 사항.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JAVA/JAVA in Web/JSP.md",
+                "file": "WebCash/프로젝트/점검 사항.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JAVA/JAVA in Web/JSP.md",
+                "file": "WebCash/프로젝트/점검 사항.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JAVA/JAVA in Web/JSP.md"
+                "file": "WebCash/프로젝트/점검 사항.md"
               }
             }
           }
@@ -136,17 +161,27 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "bee870ac19e7b9d6",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "13c4db94ce4e9f1c",
   "lastOpenFiles": [
+    "WebCash/프로젝트/애자일 방법론.md",
+    "WebCash/프로젝트/소프트웨어 개발 방법론.md",
+    "WebCash/프로젝트/점검 사항.md",
+    "WebCash/커리큘럼.md",
+    "MongoDB/MongoDB Tutorial.md",
+    "Express.js/POST 요청 처리.md",
+    "Express.js/Express.js Tutorial.md",
     "JAVA/통신/통신.md",
     "JAVA/통신/URL과 URI.md",
-    "React/Next.js/Next.js에서 MongoDB 연결하기.md",
-    "React/Next.js/API Route in Next.js.md",
-    "React/Next.js/Next.js란 무엇인가.md",
-    "React/Next.js/Next.js에서 환경변수 설정하기.md",
-    "JAVA/자료구조/배열(Array).md",
-    "JAVA/BasicGrammar/클래스/클래스.md",
-    "JAVA/BasicGrammar/클래스/this in class.md",
-    "JAVA/BasicGrammar/클래스/추상 클래스.md"
+    "React/Next.js/Next.js에서 MongoDB 연결하기.md"
   ]
 }
