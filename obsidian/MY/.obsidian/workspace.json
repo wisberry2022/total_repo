@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "8dfb75a08fc27f7e",
+        "id": "1079e0de41d12512",
         "type": "tabs",
         "children": [
           {
-            "id": "bee870ac19e7b9d6",
+            "id": "04725c72127a3b80",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WebCash/프로젝트/점검 사항.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "15442eb58b6a8b22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WebCash/프로젝트/소프트웨어 개발 방법론.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "13c4db94ce4e9f1c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WebCash/프로젝트/점검 사항.md",
+                "file": "WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WebCash/프로젝트/점검 사항.md",
+                "file": "WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WebCash/프로젝트/점검 사항.md",
+                "file": "WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WebCash/프로젝트/점검 사항.md"
+                "file": "WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md"
               }
             }
           }
@@ -163,19 +138,29 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "canvas:새 캔버스 만들기": false,
       "switcher:퀵 스위처 열기": false,
       "graph:그래프 뷰 열기": false,
-      "canvas:Create new canvas": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "13c4db94ce4e9f1c",
+  "active": "04725c72127a3b80",
   "lastOpenFiles": [
-    "WebCash/프로젝트/애자일 방법론.md",
-    "WebCash/프로젝트/소프트웨어 개발 방법론.md",
+    "Pasted image 20230319101306.png",
+    "Pasted image 20230319101115.png",
+    "Pasted image 20230319100243.png",
+    "Pasted image 20230319095713.png",
+    "Pasted image 20230319093957.png",
+    "WebCash/프로젝트/Git Branch Strategy/Git Flow.md",
+    "WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md",
+    "WebCash/프로젝트/패키지 구조",
     "WebCash/프로젝트/점검 사항.md",
+    "WebCash/프로젝트/소프트웨어 개발 방법론.md",
+    "WebCash/프로젝트/Git Branch Strategy/Github-Flow.md",
+    "WebCash/프로젝트/Git Branch Strategy",
+    "WebCash/프로젝트/애자일 방법론.md",
     "WebCash/커리큘럼.md",
     "MongoDB/MongoDB Tutorial.md",
     "Express.js/POST 요청 처리.md",
