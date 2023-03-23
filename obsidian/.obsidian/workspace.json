@@ -133,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,6 +147,10 @@
   },
   "active": "025b07a6b9352261",
   "lastOpenFiles": [
+    "MY/WebCash/프로젝트/점검 사항.md",
+    "MY/WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md",
+    "MY/WebCash/프로젝트/애자일 방법론.md",
+    "MY/WebCash/프로젝트/소프트웨어 개발 방법론.md",
     "MY/체크리스트/CheckList.md",
     "MY/체크리스트",
     "MY/JAVA/Thread.md",
