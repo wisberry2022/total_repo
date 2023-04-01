@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md",
+                "file": "체크리스트/CheckList.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md",
+                "file": "체크리스트/CheckList.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md",
+                "file": "체크리스트/CheckList.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md"
+                "file": "체크리스트/CheckList.md"
               }
             }
           }
@@ -148,13 +148,13 @@
   },
   "active": "04725c72127a3b80",
   "lastOpenFiles": [
+    "WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md",
     "Pasted image 20230319101306.png",
     "Pasted image 20230319101115.png",
     "Pasted image 20230319100243.png",
     "Pasted image 20230319095713.png",
     "Pasted image 20230319093957.png",
     "WebCash/프로젝트/Git Branch Strategy/Git Flow.md",
-    "WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md",
     "WebCash/프로젝트/패키지 구조",
     "WebCash/프로젝트/점검 사항.md",
     "WebCash/프로젝트/소프트웨어 개발 방법론.md",
