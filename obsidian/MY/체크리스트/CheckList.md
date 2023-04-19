@@ -18,16 +18,22 @@
 
 *** 
 
-### 오픈보드 컨벤션
+## 오픈보드 컨벤션
 
-**Develope 브랜치 merge Rule**
+### **Develope 브랜치 merge Rule**
 
-- [ ] 자바에서 코드 디버깅 시 가급적이면 System.out.println()대신 Sl4fj 사용하기
-	- [ ] develope 브랜치에 머지될 때에는 디버깅을 위한 System.out.println() 코드 삭제하기
-- [ ] 팀원들에게 공유하기 위한 코드 설명용 주석 이외, 테스트용 코드를 위한 주석은 삭제하기
+- [x] 자바에서 코드 디버깅 시 가급적이면 System.out.println()대신 Sl4fj 사용하기
+	- [x] develope 브랜치에 머지될 때에는 디버깅을 위한 System.out.println() 코드 삭제하기
+	- [x] System.out.println() 사용 시 사용 목적에 대한 내용을 주석으로 정리
+- [x] 팀원들에게 공유하기 위한 코드 설명용 주석 이외, 테스트용 코드를 위한 주석은 삭제하기
 
-코드 컨벤션
-- [ ] 
+### **pull request Rule**
+
+- [x] PR은 사소한 기능 구현이 끝나더라도 develope 브랜치에 pull request 보내기
+
+### **향후 계획**
+
+- [x] 이번주 금요일이나 다음주 월요일에 각자 구현한 기능 합칠 것
 
 
 ***
