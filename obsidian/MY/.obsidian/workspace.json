@@ -11,11 +11,14 @@
             "id": "04725c72127a3b80",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "체크리스트/CheckList.md",
-                "mode": "source",
-                "source": false
+                "file": "무제 파일 1.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               }
             }
           }
@@ -85,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "체크리스트/CheckList.md",
+                "file": "무제 파일 1.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "체크리스트/CheckList.md",
+                "file": "무제 파일 1.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "체크리스트/CheckList.md"
+                "file": "무제 파일 1.canvas"
               }
             }
           }
@@ -146,8 +149,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "04725c72127a3b80",
+  "active": "bfcdf524260c6ae2",
   "lastOpenFiles": [
+    "무제 파일.canvas",
+    "무제 파일 1.canvas",
+    "MongoDB/MongoDB Tutorial.md",
+    "체크리스트/CheckList.md",
     "WebCash/프로젝트/패키지 구조/아키텍처 - 프로젝트 패키지 구조.md",
     "Pasted image 20230319101306.png",
     "Pasted image 20230319101115.png",
@@ -162,7 +169,6 @@
     "WebCash/프로젝트/Git Branch Strategy",
     "WebCash/프로젝트/애자일 방법론.md",
     "WebCash/커리큘럼.md",
-    "MongoDB/MongoDB Tutorial.md",
     "Express.js/POST 요청 처리.md",
     "Express.js/Express.js Tutorial.md",
     "JAVA/통신/통신.md",
